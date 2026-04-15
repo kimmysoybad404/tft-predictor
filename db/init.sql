@@ -4,11 +4,14 @@
 
 -- Summoner / Player registry
 CREATE TABLE IF NOT EXISTS summoners (
-    puuid          VARCHAR(100) PRIMARY KEY,
-    summoner_name  VARCHAR(100),
-    summoner_id    VARCHAR(100),
-    region         VARCHAR(20),
-    fetched_at     TIMESTAMP DEFAULT NOW()
+    puuid            VARCHAR(100) PRIMARY KEY,
+    summoner_name    VARCHAR(100),
+    summoner_id      VARCHAR(100),
+    region           VARCHAR(20),
+    tier             VARCHAR(20),   -- challenger / grandmaster / master / vip
+    lp               INT,           -- LP snapshot ตอนดึง leaderboard
+    rank_in_region   INT,           -- 1–1000 (0 = VIP ที่ไม่ได้อยู่ใน leaderboard)
+    fetched_at       TIMESTAMP DEFAULT NOW()
 );
 
 -- One row per TFT match
@@ -27,7 +30,7 @@ CREATE TABLE IF NOT EXISTS participants (
     id                        SERIAL PRIMARY KEY,
     match_id                  VARCHAR(50) REFERENCES matches(match_id) ON DELETE CASCADE,
     puuid                     VARCHAR(100),
-    placement                 INT NOT NULL,          -- 1 = 1st, 8 = last
+    placement                 INT NOT NULL,
     level                     INT,
     last_round                INT,
     time_eliminated           FLOAT,
@@ -55,7 +58,7 @@ CREATE TABLE IF NOT EXISTS traits (
     participant_id  INT REFERENCES participants(id) ON DELETE CASCADE,
     name            VARCHAR(80),
     num_units       INT,
-    style           INT,    -- 0=inactive, 1=bronze, 2=silver, 3=gold, 4=prismatic
+    style           INT,
     tier_current    INT,
     tier_total      INT
 );
@@ -72,10 +75,12 @@ CREATE TABLE IF NOT EXISTS fetch_log (
 -- =========================================
 -- Indexes for query performance
 -- =========================================
-CREATE INDEX IF NOT EXISTS idx_participants_puuid    ON participants(puuid);
-CREATE INDEX IF NOT EXISTS idx_participants_match    ON participants(match_id);
+CREATE INDEX IF NOT EXISTS idx_participants_puuid     ON participants(puuid);
+CREATE INDEX IF NOT EXISTS idx_participants_match     ON participants(match_id);
 CREATE INDEX IF NOT EXISTS idx_participants_placement ON participants(placement);
-CREATE INDEX IF NOT EXISTS idx_units_participant     ON units(participant_id);
-CREATE INDEX IF NOT EXISTS idx_traits_participant    ON traits(participant_id);
-CREATE INDEX IF NOT EXISTS idx_matches_datetime      ON matches(game_datetime);
-CREATE INDEX IF NOT EXISTS idx_fetch_log_puuid       ON fetch_log(puuid);
+CREATE INDEX IF NOT EXISTS idx_units_participant      ON units(participant_id);
+CREATE INDEX IF NOT EXISTS idx_traits_participant     ON traits(participant_id);
+CREATE INDEX IF NOT EXISTS idx_matches_datetime       ON matches(game_datetime);
+CREATE INDEX IF NOT EXISTS idx_fetch_log_puuid        ON fetch_log(puuid);
+CREATE INDEX IF NOT EXISTS idx_summoners_region_rank  ON summoners(region, rank_in_region);
+CREATE INDEX IF NOT EXISTS idx_summoners_tier         ON summoners(tier);
