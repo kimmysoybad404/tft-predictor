@@ -35,10 +35,41 @@ GLOBAL_REGIONS = [
 
 # ลำดับความสำคัญของ tier (สูงกว่า = rank สูงกว่า)
 TIER_PRIORITY = {
-    "challenger":  3,
-    "grandmaster": 2,
-    "master":      1,
+    "challenger":  8,
+    "grandmaster": 7,
+    "master":      6,
+    "diamond":     5,
+    "emerald":     4,
+    "platinum":    3,
+    "gold":        2,
+    "silver":      1,
 }
+
+# Division priority (I > II > III > IV)
+DIVISION_PRIORITY = {"I": 4, "II": 3, "III": 2, "IV": 1}
+
+# Fallback tiers ถ้า Challenger/Grandmaster/Master ยังไม่ครบ 1000
+FALLBACK_TIERS = [
+    ("DIAMOND",  "I"),
+    ("DIAMOND",  "II"),
+    ("DIAMOND",  "III"),
+    ("DIAMOND",  "IV"),
+    ("EMERALD",  "I"),
+    ("EMERALD",  "II"),
+    ("EMERALD",  "III"),
+    ("EMERALD",  "IV"),
+    ("PLATINUM", "I"),
+    ("PLATINUM", "II"),
+    ("PLATINUM", "III"),
+    ("PLATINUM", "IV"),
+    ("GOLD",     "I"),
+    ("GOLD",     "II"),
+    ("GOLD",     "III"),
+    ("GOLD",     "IV"),
+    ("SILVER",   "I"),
+]
+
+TARGET_PLAYERS = 1000
 
 DB_URL = (
     f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}"
@@ -55,7 +86,7 @@ HEADERS = {
 
 # ── VIP Watchlist ─────────────────────────────────────────────────────────────
 TRACKED_SUMMONERS = [
-    {"riot_id": "CookieMonster274#EUNE", "routing": "europe", "region_name": "EUNE"},
+    {"riot_id": "Bunny#5664", "routing": "SEA", "region_name": "THA"},
     # {"riot_id": "TFTPro#NA1", "routing": "americas", "region_name": "North America"},
 ]
 
@@ -87,56 +118,107 @@ def riot_get(url: str, params: dict = None) -> dict | None:
         return None
 
 
-def get_leaderboard(platform: str, tier: str) -> list[dict]:
+def get_apex_leaderboard(platform: str, tier: str) -> list[dict]:
     """
-    ดึง leaderboard ของ tier ที่กำหนด (challenger / grandmaster / master)
-    คืน list ของ player dict พร้อม field 'tier' ที่ inject เข้าไป
+    ดึง Challenger / Grandmaster / Master (ใช้ endpoint /v1/{tier})
+    inject field 'tier' และ 'division' เข้าไปทุก entry
     """
-    url = f"https://{platform}.api.riotgames.com/tft/league/v1/{tier}"
+    url  = f"https://{platform}.api.riotgames.com/tft/league/v1/{tier}"
     data = riot_get(url)
 
     if not data or "entries" not in data:
-        log.warning(f"No data for {tier} on {platform}")
+        log.warning(f"  No data for {tier} on {platform}")
         return []
 
     entries = data["entries"]
-
-    # inject tier ให้แต่ละ entry เพื่อใช้ sort ทีหลัง
     for entry in entries:
-        entry["tier"] = tier.lower()
+        entry["tier"]     = tier.lower()
+        entry["division"] = "I"   # apex tier ไม่มี division จริงๆ ใส่ I ไว้เพื่อ sort
 
-    log.info(f"  {tier.capitalize():>12}: {len(entries):>4} players")
+    log.info(f"  {tier.capitalize():>12} (apex)  : {len(entries):>4} players")
     return entries
+
+
+def get_division_leaderboard(platform: str, tier: str, division: str) -> list[dict]:
+    """
+    ดึง Diamond / Emerald / Platinum / Gold / Silver แบบ pagination
+    (/v1/entries/{tier}/{division}?page=N)
+    คืน entries ทั้งหมดของ tier+division นั้น
+    """
+    all_entries = []
+    page = 1
+
+    while True:
+        url  = f"https://{platform}.api.riotgames.com/tft/league/v1/entries/{tier}/{division}"
+        data = riot_get(url, params={"page": page})
+
+        if not data or not isinstance(data, list) or len(data) == 0:
+            break
+
+        for entry in data:
+            entry["tier"]     = tier.lower()
+            entry["division"] = division
+
+        all_entries.extend(data)
+
+        # Riot คืนหน้าละ 205 entries ถ้าน้อยกว่านั้นคือหน้าสุดท้าย
+        if len(data) < 205:
+            break
+
+        page += 1
+        time.sleep(0.3)
+
+    log.info(f"  {tier.capitalize():>12} {division:<3}      : {len(all_entries):>4} players")
+    return all_entries
 
 
 def get_top1000_ranked(platform: str) -> list[dict]:
     """
-    ดึง Challenger + Grandmaster + Master รวมกัน
-    แล้ว sort by tier → LP descending
+    ดึง Challenger + Grandmaster + Master ก่อน
+    ถ้ายังไม่ครบ 1000 → fallback ดึง Diamond I, II, ... ลงมาเรื่อยๆ
+    sort by tier priority → division priority → LP
     คืน top 1000 พร้อม rank_in_region (1-based)
     """
     log.info(f"Fetching leaderboard for {platform}...")
 
-    challenger  = get_leaderboard(platform, "challenger")
-    time.sleep(0.5)
-    grandmaster = get_leaderboard(platform, "grandmaster")
-    time.sleep(0.5)
-    master      = get_leaderboard(platform, "master")
+    all_players = []
 
-    all_players = challenger + grandmaster + master
+    # ── ดึง Apex tiers ก่อน ───────────────────────────────────────────────────
+    for apex in ["challenger", "grandmaster", "master"]:
+        entries = get_apex_leaderboard(platform, apex)
+        all_players.extend(entries)
+        time.sleep(0.5)
+
+    log.info(f"  Apex total: {len(all_players)} players")
+
+    # ── Fallback ดึง tier ล่างถ้ายังไม่ครบ ────────────────────────────────────
+    if len(all_players) < TARGET_PLAYERS:
+        log.info(f"  Not enough players ({len(all_players)}/{TARGET_PLAYERS}), fetching lower tiers...")
+
+        for tier, division in FALLBACK_TIERS:
+            if len(all_players) >= TARGET_PLAYERS:
+                break
+
+            entries = get_division_leaderboard(platform, tier, division)
+            all_players.extend(entries)
+            time.sleep(0.5)
+
+            log.info(f"  Running total: {len(all_players)} players")
+
     log.info(f"  Total combined: {len(all_players)} players")
 
-    # sort by tier priority (สูงก่อน) แล้วค่อย LP (สูงก่อน)
+    # ── Sort: tier priority → division priority → LP (ทั้งหมด descending) ─────
     all_players.sort(
         key=lambda x: (
-            TIER_PRIORITY.get(x.get("tier", "master"), 0),
-            x.get("leaguePoints", 0)
+            TIER_PRIORITY.get(x.get("tier", "silver"), 0),
+            DIVISION_PRIORITY.get(x.get("division", "IV"), 0),
+            x.get("leaguePoints", 0),
         ),
-        reverse=True
+        reverse=True,
     )
 
-    # slice top 1000 และ assign rank
-    top1000 = all_players[:1000]
+    # ── Slice top 1000 และ assign rank ────────────────────────────────────────
+    top1000 = all_players[:TARGET_PLAYERS]
     for i, player in enumerate(top1000):
         player["rank_in_region"] = i + 1
 
