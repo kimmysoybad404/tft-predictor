@@ -4,17 +4,54 @@ Endpoints for analyzing traits, augments, units, and items
 from high-ranked TFT players across regions.
 """
 
-from fastapi import FastAPI, Depends, Query
+import sys
+import os
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, Depends, Query, HTTPException
+from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 from typing import Optional
 from database import get_db
 
+# ── Predictor (load ตอน startup) ──────────────────────────────────────────────
+predictor = None
+
+def load_predictor():
+    global predictor
+    try:
+        # ml folder ถูก mount ที่ /app/ml เสมอ
+        ml_path = "/app/ml"
+        sys.path.insert(0, ml_path)
+
+        # เปลี่ยน working dir ไปที่ ml เพื่อให้ joblib.load หาไฟล์เจอ
+        os.chdir(ml_path)
+
+        from predict import TFTPredictor
+        predictor = TFTPredictor()
+        print("[INFO] Predictor loaded successfully")
+    except Exception as e:
+        print(f"[WARNING] Could not load predictor: {e}")
+        predictor = None
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    load_predictor()
+    yield
+
 app = FastAPI(
     title="TFT Meta Analyzer",
     description="Analyze TFT meta from top-ranked players across regions",
-    version="1.0.0"
+    version="1.0.0",
+    lifespan=lifespan,
 )
+
+# ── Pydantic Models ───────────────────────────────────────────────────────────
+class PredictRequest(BaseModel):
+    active_traits: list[str]  # ["TraitName|style", ...] เช่น ["Rebel|3", "Invoker|2"]
+    units:         list[str]  # ["character_id|tier", ...] เช่น ["TFT13_Jinx|2"]
+    items:         list[str]  # ["ItemName", ...]
+    augments:      list[str]  # ["AugmentName", ...]
 
 
 # ── Filter Helper ─────────────────────────────────────────────────────────────
@@ -261,7 +298,82 @@ def get_meta_items(
     }
 
 
+# ── GET /tier-list/traits ─────────────────────────────────────────────────────
+@app.get("/tier-list/traits")
+def get_trait_tier_list(
+    tier: Optional[str] = Query(None, description="S, A, B, C, D"),
+):
+    """
+    Trait tier list จาก ML model
+    เรียงตาม top4_rate descending
+    filter ตาม tier ได้ (S/A/B/C/D)
+    """
+    if predictor is None:
+        raise HTTPException(status_code=503, detail="Predictor not loaded. Run train.py first.")
+
+    data = predictor.get_trait_tier_list(tier_filter=tier)
+    return {
+        "filter": {"tier": tier},
+        "count":  len(data),
+        "data":   data,
+    }
+
+
+# ── GET /tier-list/comps ──────────────────────────────────────────────────────
+@app.get("/tier-list/comps")
+def get_comp_tier_list(
+    tier: Optional[str] = Query(None, description="S, A, B, C, D"),
+):
+    """
+    Comp tier list จาก ML clustering
+    เรียงตาม top4_rate descending
+    filter ตาม tier ได้ (S/A/B/C/D)
+    """
+    if predictor is None:
+        raise HTTPException(status_code=503, detail="Predictor not loaded. Run train.py first.")
+
+    data = predictor.get_comp_tier_list(tier_filter=tier)
+    return {
+        "filter": {"tier": tier},
+        "count":  len(data),
+        "data":   data,
+    }
+
+
+# ── POST /predict ─────────────────────────────────────────────────────────────
+@app.post("/predict")
+def predict_comp(req: PredictRequest):
+    """
+    วิเคราะห์ comp ที่ส่งเข้ามา
+    คืน top4_probability, tier, trait analysis และ similar comp
+    
+    ตัวอย่าง input:
+    {
+        "active_traits": ["Rebel|3", "Invoker|2"],
+        "units": ["TFT13_Jinx|2", "TFT13_Ekko|1"],
+        "items": ["TFT_Item_RabadonsDeathcap"],
+        "augments": ["TFT_Augment_RebelHeart"]
+    }
+    """
+    if predictor is None:
+        raise HTTPException(status_code=503, detail="Predictor not loaded. Run train.py first.")
+
+    try:
+        result = predictor.predict_comp(
+            active_traits=req.active_traits,
+            units=req.units,
+            items=req.items,
+            augments=req.augments,
+        )
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Prediction failed: {str(e)}")
+
+
 # ── Health Check ──────────────────────────────────────────────────────────────
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {
+        "status":           "ok",
+        "predictor_loaded": predictor is not None,
+    }
