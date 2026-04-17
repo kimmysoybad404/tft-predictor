@@ -87,6 +87,7 @@ HEADERS = {
 # ── VIP Watchlist ─────────────────────────────────────────────────────────────
 TRACKED_SUMMONERS = [
     {"riot_id": "Bunny#5664", "routing": "SEA", "region_name": "THA"},
+    {"riot_id": "Dinozexe#NAJA", "routing": "SEA", "region_name": "THA"},
     # {"riot_id": "TFTPro#NA1", "routing": "americas", "region_name": "North America"},
 ]
 
