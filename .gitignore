@@ -1,2 +1,28 @@
-/.env
-/.vscode
+# Environment Files
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.pytest_cache/
+
+# ML Models & Data
+*.joblib
+*.pkl
+*.h5
+*.npy
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+
+# Editor
+.vscode/
