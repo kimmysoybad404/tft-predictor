@@ -3,6 +3,5 @@ xgboost==2.0.3
 pandas==2.2.2
 numpy==1.26.4
 joblib==1.4.0
-sqlalchemy==2.0.23
-psycopg2-binary==2.9.9
+pymongo==4.8.0
 python-dotenv==1.0.0

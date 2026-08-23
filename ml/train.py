@@ -14,7 +14,7 @@ import logging
 import numpy as np
 import pandas as pd
 from dotenv import load_dotenv
-from sqlalchemy import create_engine, text
+from pymongo import MongoClient
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.cluster import KMeans
 from sklearn.model_selection import train_test_split
@@ -31,9 +31,9 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 # ── Config ────────────────────────────────────────────────────────────────────
-DB_URL = (
-    f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}"
-    f"@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
+MONGO_URI = (
+    f"mongodb://{os.getenv('MONGO_USER')}:{os.getenv('MONGO_PASSWORD')}"
+    f"@{os.getenv('MONGO_HOST')}:{os.getenv('MONGO_PORT')}/?authSource=admin"
 )
 
 MODEL_PATH      = "model.joblib"
@@ -50,7 +50,8 @@ TIER_THRESHOLDS = {
 
 NUM_COMP_CLUSTERS = 50   # จำนวน comp cluster
 
-engine = create_engine(DB_URL, pool_pre_ping=True)
+client = MongoClient(MONGO_URI)
+db     = client[os.getenv("MONGO_DB_NAME", "tft_predictor")]
 
 
 # ── Tier Helper ───────────────────────────────────────────────────────────────
@@ -66,41 +67,48 @@ def classify_tier(top4_rate: float) -> str:
 def load_data() -> pd.DataFrame:
     log.info("Loading data from DB...")
 
-    query = """
-        SELECT
-            p.id            AS participant_id,
-            p.placement,
-            p.augments,
-            CASE WHEN p.placement <= 4 THEN 1 ELSE 0 END AS top4,
+    pipeline = [
+        {"$match": {"traits": {"$ne": []}}},  # เอาเฉพาะ row ที่มี trait data
+        {"$project": {
+            "_id":            0,
+            "participant_id": "$_id",
+            "placement":      1,
+            "augments":       1,
+            "top4":           {"$cond": [{"$lte": ["$placement", 4]}, 1, 0]},
 
-            -- traits: รวมเป็น list ของ "name|style"
-            ARRAY_AGG(DISTINCT t.name || '|' || t.style::text)
-                FILTER (WHERE t.style > 0)  AS active_traits,
+            # traits: รวมเป็น set ของ "name|style" (เฉพาะ style > 0)
+            "active_traits": {"$setUnion": [{
+                "$map": {
+                    "input": {"$filter": {"input": "$traits", "cond": {"$gt": ["$$this.style", 0]}}},
+                    "as":    "t",
+                    "in":    {"$concat": ["$$t.name", "|", {"$toString": "$$t.style"}]},
+                }
+            }, []]},
 
-            -- units: รวมเป็น list ของ "character_id|tier"
-            ARRAY_AGG(DISTINCT u.character_id || '|' || u.tier::text)
-                FILTER (WHERE u.character_id IS NOT NULL) AS units,
+            # units: รวมเป็น set ของ "character_id|tier"
+            "units": {"$setUnion": [{
+                "$map": {
+                    "input": "$units",
+                    "as":    "u",
+                    "in":    {"$concat": ["$$u.character_id", "|", {"$toString": "$$u.tier"}]},
+                }
+            }, []]},
 
-            -- items: รวมทุก item จากทุก unit
-            ARRAY_AGG(DISTINCT item)
-                FILTER (WHERE item IS NOT NULL AND item != '') AS items
+            # items: รวมทุก item จากทุก unit (dedup, ตัด empty string ทิ้ง)
+            "items": {"$setDifference": [{
+                "$reduce": {
+                    "input":        "$units.items",
+                    "initialValue": [],
+                    "in":           {"$setUnion": ["$$value", "$$this"]},
+                }
+            }, [""]]},
+        }},
+    ]
 
-        FROM participants p
-        LEFT JOIN traits t ON t.participant_id = p.id
-        LEFT JOIN units  u ON u.participant_id = p.id
-        LEFT JOIN LATERAL UNNEST(u.items) AS item ON TRUE
-        GROUP BY p.id, p.placement, p.augments
-        HAVING COUNT(t.id) > 0   -- เอาเฉพาะ row ที่มี trait data
-    """
-
-    df = pd.read_sql(text(query), engine)
+    df = pd.DataFrame(list(db.participants.aggregate(pipeline)))
     log.info(f"Loaded {len(df):,} participants")
 
-    # clean null arrays
-    df["active_traits"] = df["active_traits"].apply(lambda x: x if x is not None else [])
-    df["units"]         = df["units"].apply(lambda x: x if x is not None else [])
-    df["items"]         = df["items"].apply(lambda x: x if x is not None else [])
-    df["augments"]      = df["augments"].apply(lambda x: x if x is not None else [])
+    df["augments"] = df["augments"].apply(lambda x: x if isinstance(x, list) else [])
 
     return df
 
@@ -181,37 +189,34 @@ def train_model(X: np.ndarray, y: np.ndarray) -> XGBClassifier:
 def build_trait_tier_list() -> list[dict]:
     log.info("Building trait tier list...")
 
-    query = """
-        SELECT
-            t.name,
-            t.style,
-            COUNT(*)                                            AS play_count,
-            ROUND(AVG(p.placement)::numeric, 2)                AS avg_placement,
-            ROUND(
-                100.0 * SUM(CASE WHEN p.placement <= 4 THEN 1 ELSE 0 END)
-                / COUNT(*), 1
-            )                                                   AS top4_rate
-        FROM traits t
-        JOIN participants p ON t.participant_id = p.id
-        WHERE t.style > 0
-        GROUP BY t.name, t.style
-        HAVING COUNT(*) >= 30
-        ORDER BY top4_rate DESC
-    """
+    pipeline = [
+        {"$unwind": "$traits"},
+        {"$match": {"traits.style": {"$gt": 0}}},
+        {"$group": {
+            "_id":           {"name": "$traits.name", "style": "$traits.style"},
+            "play_count":    {"$sum": 1},
+            "avg_placement": {"$avg": "$placement"},
+            "top4_count":    {"$sum": {"$cond": [{"$lte": ["$placement", 4]}, 1, 0]}},
+        }},
+        {"$match": {"play_count": {"$gte": 30}}},
+    ]
 
-    df = pd.read_sql(text(query), engine)
+    rows = list(db.participants.aggregate(pipeline))
 
     tier_list = []
-    for _, row in df.iterrows():
+    for row in rows:
+        play_count = row["play_count"]
+        top4_rate  = round(100.0 * row["top4_count"] / play_count, 1)
         tier_list.append({
-            "name":          row["name"],
-            "style":         int(row["style"]),
-            "play_count":    int(row["play_count"]),
-            "avg_placement": float(row["avg_placement"]),
-            "top4_rate":     float(row["top4_rate"]),
-            "tier":          classify_tier(float(row["top4_rate"])),
+            "name":          row["_id"]["name"],
+            "style":         int(row["_id"]["style"]),
+            "play_count":    int(play_count),
+            "avg_placement": round(float(row["avg_placement"]), 2),
+            "top4_rate":     top4_rate,
+            "tier":          classify_tier(top4_rate),
         })
 
+    tier_list.sort(key=lambda x: x["top4_rate"], reverse=True)
     log.info(f"  Trait tier list: {len(tier_list)} entries")
     return tier_list
 

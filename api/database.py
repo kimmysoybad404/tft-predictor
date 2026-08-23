@@ -1,26 +1,17 @@
 import os
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, DeclarativeBase
+from pymongo import MongoClient
 from dotenv import load_dotenv
 
 load_dotenv()
 
-DB_URL = (
-    f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}"
-    f"@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
+MONGO_URI = (
+    f"mongodb://{os.getenv('MONGO_USER')}:{os.getenv('MONGO_PASSWORD')}"
+    f"@{os.getenv('MONGO_HOST')}:{os.getenv('MONGO_PORT')}/?authSource=admin"
 )
 
-engine = create_engine(DB_URL, pool_pre_ping=True)
-Session = sessionmaker(bind=engine)
-
-
-class Base(DeclarativeBase):
-    pass
+client = MongoClient(MONGO_URI)
+db = client[os.getenv("MONGO_DB_NAME", "tft_predictor")]
 
 
 def get_db():
-    db = Session()
-    try:
-        yield db
-    finally:
-        db.close()
+    yield db

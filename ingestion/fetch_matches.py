@@ -1,6 +1,6 @@
 """
 TFT Match Ingestion Worker
-Fetches match data from Riot API and stores in PostgreSQL.
+Fetches match data from Riot API and stores in MongoDB.
 Runs on a schedule every 30 minutes.
 """
 
@@ -11,8 +11,8 @@ import schedule
 import requests
 from datetime import datetime
 from dotenv import load_dotenv
-from sqlalchemy import create_engine, text
-from sqlalchemy.orm import sessionmaker
+from pymongo import MongoClient, ASCENDING
+from pymongo.errors import DuplicateKeyError, OperationFailure
 
 load_dotenv()
 
@@ -48,32 +48,24 @@ TIER_PRIORITY = {
 # Division priority (I > II > III > IV)
 DIVISION_PRIORITY = {"I": 4, "II": 3, "III": 2, "IV": 1}
 
-# Fallback tiers ถ้า Challenger/Grandmaster/Master ยังไม่ครบ 1000
+# Fallback tiers ถ้า Challenger/Grandmaster/Master ยังไม่ครบ TARGET_PLAYERS
+# หยุดแค่ Diamond เพื่อรักษาคุณภาพของ "high-ranked meta" ไม่ให้เจือจางลงไปถึง Gold/Silver
 FALLBACK_TIERS = [
     ("DIAMOND",  "I"),
     ("DIAMOND",  "II"),
     ("DIAMOND",  "III"),
     ("DIAMOND",  "IV"),
-    ("EMERALD",  "I"),
-    ("EMERALD",  "II"),
-    ("EMERALD",  "III"),
-    ("EMERALD",  "IV"),
-    ("PLATINUM", "I"),
-    ("PLATINUM", "II"),
-    ("PLATINUM", "III"),
-    ("PLATINUM", "IV"),
-    ("GOLD",     "I"),
-    ("GOLD",     "II"),
-    ("GOLD",     "III"),
-    ("GOLD",     "IV"),
-    ("SILVER",   "I"),
 ]
 
-TARGET_PLAYERS = 1000
+TARGET_PLAYERS = 200
 
-DB_URL = (
-    f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}"
-    f"@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
+# จำนวนวันที่จะเก็บข้อมูลแมตช์ไว้ — เก่ากว่านี้ Mongo จะลบทิ้งอัตโนมัติ (TTL index)
+# กันไม่ให้ storage โตไม่หยุดเวลา ingestion ดึงข้อมูลต่อเนื่องตลอด
+DATA_RETENTION_DAYS = int(os.getenv("DATA_RETENTION_DAYS", 14))
+
+MONGO_URI = (
+    f"mongodb://{os.getenv('MONGO_USER')}:{os.getenv('MONGO_PASSWORD')}"
+    f"@{os.getenv('MONGO_HOST')}:{os.getenv('MONGO_PORT')}/?authSource=admin"
 )
 
 HEADERS = {
@@ -92,8 +84,43 @@ TRACKED_SUMMONERS = [
 ]
 
 # ── DB Setup ──────────────────────────────────────────────────────────────────
-engine = create_engine(DB_URL, pool_pre_ping=True)
-Session = sessionmaker(bind=engine)
+client = MongoClient(MONGO_URI)
+db = client[os.getenv("MONGO_DB_NAME", "tft_predictor")]
+
+
+def ensure_ttl_index(collection, field: str, retention_days: int, index_name: str):
+    """
+    สร้าง TTL index (idempotent) — ถ้า DATA_RETENTION_DAYS เปลี่ยนไปจากตอน deploy ก่อนหน้า
+    ต้อง drop index เดิมก่อนแล้วสร้างใหม่ เพราะ Mongo ไม่ยอมแก้ expireAfterSeconds ผ่าน create_index ตรงๆ
+    """
+    seconds = retention_days * 24 * 60 * 60
+    try:
+        collection.create_index(field, name=index_name, expireAfterSeconds=seconds)
+    except OperationFailure:
+        collection.drop_index(index_name)
+        collection.create_index(field, name=index_name, expireAfterSeconds=seconds)
+
+
+def ensure_indexes():
+    """สร้าง index ที่จำเป็น (idempotent — เรียกซ้ำได้ทุกครั้งที่ worker start)"""
+    db.participants.create_index(
+        [("match_id", ASCENDING), ("puuid", ASCENDING)], unique=True
+    )
+    db.participants.create_index("puuid")
+    db.participants.create_index("match_id")
+    db.participants.create_index("placement")
+    db.participants.create_index([("region", ASCENDING), ("tier", ASCENDING)])
+    db.participants.create_index("traits.name")
+    db.participants.create_index("units.character_id")
+    db.summoners.create_index([("region", ASCENDING), ("rank_in_region", ASCENDING)])
+    db.summoners.create_index("tier")
+
+    # TTL — ลบข้อมูลเก่าเกิน DATA_RETENTION_DAYS ทิ้งอัตโนมัติ กัน storage โตไม่หยุด
+    # เพราะ ingestion ดึงข้อมูลต่อเนื่องทุก 30 นาทีตลอดเวลา
+    ensure_ttl_index(db.participants, "game_datetime", DATA_RETENTION_DAYS, "ttl_game_datetime")
+    ensure_ttl_index(db.matches, "game_datetime", DATA_RETENTION_DAYS, "ttl_game_datetime")
+    # summoner ที่หลุด top1000 ไปนานแล้ว (ไม่ถูก upsert ต่อ) จะถูกลบทิ้งไปด้วยตามอายุของ fetched_at ล่าสุด
+    ensure_ttl_index(db.summoners, "fetched_at", DATA_RETENTION_DAYS, "ttl_fetched_at")
 
 
 # ── Riot API Helpers ──────────────────────────────────────────────────────────
@@ -251,74 +278,83 @@ def get_match_detail(match_id: str, routing: str) -> dict | None:
 
 
 # ── DB Insert Helpers ─────────────────────────────────────────────────────────
-def upsert_summoner(session, puuid: str, region: str, tier: str, lp: int, rank_in_region: int):
+def upsert_summoner(puuid: str, region: str, tier: str, lp: int, rank_in_region: int):
     """
     บันทึกหรืออัปเดต summoner พร้อม tier, lp และ rank snapshot ล่าสุด
     """
-    session.execute(text("""
-        INSERT INTO summoners (puuid, region, tier, lp, rank_in_region, fetched_at)
-        VALUES (:puuid, :region, :tier, :lp, :rank_in_region, NOW())
-        ON CONFLICT (puuid) DO UPDATE SET
-            region          = EXCLUDED.region,
-            tier            = EXCLUDED.tier,
-            lp              = EXCLUDED.lp,
-            rank_in_region  = EXCLUDED.rank_in_region,
-            fetched_at      = EXCLUDED.fetched_at
-    """), {
-        "puuid":           puuid,
-        "region":          region,
-        "tier":            tier,
-        "lp":              lp,
-        "rank_in_region":  rank_in_region,
-    })
+    db.summoners.update_one(
+        {"_id": puuid},
+        {"$set": {
+            "region":         region,
+            "tier":           tier,
+            "lp":             lp,
+            "rank_in_region": rank_in_region,
+            "fetched_at":     datetime.utcnow(),
+        }},
+        upsert=True,
+    )
 
 
-def match_exists(session, match_id: str) -> bool:
-    result = session.execute(
-        text("SELECT 1 FROM matches WHERE match_id = :mid"),
-        {"mid": match_id}
-    ).fetchone()
-    return result is not None
+def is_already_fetched(puuid: str, match_id: str) -> bool:
+    """
+    เช็คว่าเคยดึงแมตช์นี้ของ summoner คนนี้ไปแล้วหรือยัง
+    (ใช้ participants เป็น source of truth แทน fetch_log เดิม เพราะ unique index (match_id, puuid) รับประกันไม่ซ้ำอยู่แล้ว)
+    """
+    return db.participants.find_one(
+        {"match_id": match_id, "puuid": puuid}, {"_id": 1}
+    ) is not None
 
 
-def is_already_fetched(session, puuid: str, match_id: str) -> bool:
-    result = session.execute(
-        text("SELECT 1 FROM fetch_log WHERE puuid = :puuid AND match_id = :mid"),
-        {"puuid": puuid, "mid": match_id}
-    ).fetchone()
-    return result is not None
-
-
-def insert_match(session, match_id, info: dict):
+def insert_match(match_id: str, info: dict) -> datetime:
     raw_time = info.get("game_datetime") or info.get("gameCreation") or 0
+    game_datetime = datetime.fromtimestamp(raw_time / 1000)
 
-    session.execute(text("""
-        INSERT INTO matches (match_id, game_datetime, game_length, tft_set_number, tft_set_core_name, queue_id)
-        VALUES (:match_id, :game_datetime, :game_length, :tft_set_number, :tft_set_core_name, :queue_id)
-        ON CONFLICT (match_id) DO NOTHING
-    """), {
-        "match_id":          match_id,
-        "game_datetime":     datetime.fromtimestamp(raw_time / 1000),
-        "game_length":       info.get("game_length") or info.get("gameDuration"),
-        "tft_set_number":    info.get("tft_set_number", 16),
-        "tft_set_core_name": info.get("tft_set_core_name", "TFTSet16"),
-        "queue_id":          info.get("queue_id") or info.get("queueId"),
-    })
+    db.matches.update_one(
+        {"_id": match_id},
+        {"$setOnInsert": {
+            "game_datetime":     game_datetime,
+            "game_length":       info.get("game_length") or info.get("gameDuration"),
+            "tft_set_number":    info.get("tft_set_number", 16),
+            "tft_set_core_name": info.get("tft_set_core_name", "TFTSet16"),
+            "queue_id":          info.get("queue_id") or info.get("queueId"),
+            "created_at":        datetime.utcnow(),
+        }},
+        upsert=True,
+    )
+    return game_datetime
 
 
-def insert_participant(session, match_id: str, p: dict) -> int:
-    result = session.execute(text("""
-        INSERT INTO participants
-            (match_id, puuid, placement, level, last_round, time_eliminated,
-             total_damage_to_players, players_eliminated, gold_left, augments)
-        VALUES
-            (:match_id, :puuid, :placement, :level, :last_round, :time_eliminated,
-             :total_damage_to_players, :players_eliminated, :gold_left, :augments)
-        ON CONFLICT (match_id, puuid) DO NOTHING
-        RETURNING id
-    """), {
+def insert_participant(match_id: str, region: str, tier: str, game_datetime: datetime, p: dict):
+    """
+    สร้าง participant document เดียวที่ embed ทั้ง units และ traits ไว้ในตัว
+    (แทนการ insert แยก 3 ตารางแบบ Postgres เดิม)
+    """
+    units = [
+        {
+            "character_id": u.get("character_id"),
+            "rarity":       u.get("rarity"),
+            "tier":         u.get("tier"),
+            "items":        u.get("itemNames", []),
+        }
+        for u in p.get("units", [])
+    ]
+    traits = [
+        {
+            "name":         t.get("name"),
+            "num_units":    t.get("num_units"),
+            "style":        t.get("style"),
+            "tier_current": t.get("tier_current"),
+            "tier_total":   t.get("tier_total"),
+        }
+        for t in p.get("traits", [])
+    ]
+
+    db.participants.insert_one({
         "match_id":                match_id,
         "puuid":                   p["puuid"],
+        "region":                  region,
+        "tier":                    tier,
+        "game_datetime":           game_datetime,
         "placement":               p["placement"],
         "level":                   p.get("level"),
         "last_round":              p.get("last_round"),
@@ -327,46 +363,9 @@ def insert_participant(session, match_id: str, p: dict) -> int:
         "players_eliminated":      p.get("players_eliminated"),
         "gold_left":               p.get("gold_left"),
         "augments":                p.get("augments", []),
+        "units":                   units,
+        "traits":                  traits,
     })
-    row = result.fetchone()
-    return row[0] if row else None
-
-
-def insert_units(session, participant_id: int, units: list):
-    for u in units:
-        session.execute(text("""
-            INSERT INTO units (participant_id, character_id, rarity, tier, items)
-            VALUES (:pid, :character_id, :rarity, :tier, :items)
-        """), {
-            "pid":          participant_id,
-            "character_id": u.get("character_id"),
-            "rarity":       u.get("rarity"),
-            "tier":         u.get("tier"),
-            "items":        u.get("itemNames", []),
-        })
-
-
-def insert_traits(session, participant_id: int, traits: list):
-    for t in traits:
-        session.execute(text("""
-            INSERT INTO traits (participant_id, name, num_units, style, tier_current, tier_total)
-            VALUES (:pid, :name, :num_units, :style, :tier_current, :tier_total)
-        """), {
-            "pid":          participant_id,
-            "name":         t.get("name"),
-            "num_units":    t.get("num_units"),
-            "style":        t.get("style"),
-            "tier_current": t.get("tier_current"),
-            "tier_total":   t.get("tier_total"),
-        })
-
-
-def log_fetch(session, puuid: str, match_id: str):
-    session.execute(text("""
-        INSERT INTO fetch_log (puuid, match_id)
-        VALUES (:puuid, :mid)
-        ON CONFLICT DO NOTHING
-    """), {"puuid": puuid, "mid": match_id})
 
 
 # ── Main Ingestion Logic ──────────────────────────────────────────────────────
@@ -382,35 +381,31 @@ def process_summoner(puuid: str, routing: str, region: str, tier: str, lp: int, 
         return
 
     new_count = 0
-    with Session() as session:
-        # อัปเดต summoner พร้อม rank snapshot
-        upsert_summoner(session, puuid, region, tier, lp, rank)
 
-        for match_id in match_ids:
-            if is_already_fetched(session, puuid, match_id):
-                continue
+    # อัปเดต summoner พร้อม rank snapshot
+    upsert_summoner(puuid, region, tier, lp, rank)
 
-            detail = get_match_detail(match_id, routing)
-            if not detail:
-                continue
+    for match_id in match_ids:
+        if is_already_fetched(puuid, match_id):
+            continue
 
-            info = detail["info"]
-            match_id_str = detail["metadata"]["match_id"]
+        detail = get_match_detail(match_id, routing)
+        if not detail:
+            continue
 
-            if not match_exists(session, match_id_str):
-                insert_match(session, match_id_str, info)
+        info = detail["info"]
+        match_id_str = detail["metadata"]["match_id"]
 
-            for participant in info["participants"]:
-                pid = insert_participant(session, match_id_str, participant)
-                if pid:
-                    insert_units(session, pid, participant.get("units", []))
-                    insert_traits(session, pid, participant.get("traits", []))
+        game_datetime = insert_match(match_id_str, info)
 
-            log_fetch(session, puuid, match_id_str)
-            new_count += 1
-            time.sleep(0.5)
+        for participant in info["participants"]:
+            try:
+                insert_participant(match_id_str, region, tier, game_datetime, participant)
+            except DuplicateKeyError:
+                pass  # อีก 7 คนในแมตช์นี้อาจถูก insert ไปแล้วตอนประมวลผล summoner คนอื่น
 
-        session.commit()
+        new_count += 1
+        time.sleep(0.5)
 
     log.info(f"  [{log_name}] Rank #{rank} | {tier.upper()} {lp} LP → {new_count} new matches")
 
@@ -422,7 +417,7 @@ def run_ingestion():
         platform = region["platform"]
         routing  = region["routing"]
 
-        log.info(f"🚀 [{region['name']}] Building top 1000 leaderboard...")
+        log.info(f"🚀 [{region['name']}] Building top {TARGET_PLAYERS} leaderboard...")
 
         # ── ดึง top 1000 เรียงตาม tier → LP ──────────────────────────────────
         top1000 = get_top1000_ranked(platform)
@@ -502,6 +497,7 @@ def run_ingestion():
 # ── Scheduler ─────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     log.info("TFT Ingestion Worker started")
+    ensure_indexes()
     run_ingestion()
     schedule.every(30).minutes.do(run_ingestion)
 
