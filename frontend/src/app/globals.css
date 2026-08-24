@@ -7,3 +7,8 @@ body {
   color: #111827;
   -webkit-font-smoothing: antialiased;
 }
+
+.dark body {
+  background-color: #1c1c1f;
+  color: #ededf1;
+}

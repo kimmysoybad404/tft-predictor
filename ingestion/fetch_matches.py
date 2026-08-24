@@ -110,6 +110,7 @@ def ensure_indexes():
     db.participants.create_index("match_id")
     db.participants.create_index("placement")
     db.participants.create_index([("region", ASCENDING), ("tier", ASCENDING)])
+    db.participants.create_index("tft_set")
     db.participants.create_index("traits.name")
     db.participants.create_index("units.character_id")
     db.summoners.create_index([("region", ASCENDING), ("rank_in_region", ASCENDING)])
@@ -324,7 +325,7 @@ def insert_match(match_id: str, info: dict) -> datetime:
     return game_datetime
 
 
-def insert_participant(match_id: str, region: str, tier: str, game_datetime: datetime, p: dict):
+def insert_participant(match_id: str, region: str, tier: str, game_datetime: datetime, tft_set: str, p: dict):
     """
     สร้าง participant document เดียวที่ embed ทั้ง units และ traits ไว้ในตัว
     (แทนการ insert แยก 3 ตารางแบบ Postgres เดิม)
@@ -352,8 +353,11 @@ def insert_participant(match_id: str, region: str, tier: str, game_datetime: dat
     db.participants.insert_one({
         "match_id":                match_id,
         "puuid":                   p["puuid"],
+        "riot_id_name":            p.get("riotIdGameName"),
+        "riot_id_tag":             p.get("riotIdTagline"),
         "region":                  region,
         "tier":                    tier,
+        "tft_set":                 tft_set,
         "game_datetime":           game_datetime,
         "placement":               p["placement"],
         "level":                   p.get("level"),
@@ -397,10 +401,11 @@ def process_summoner(puuid: str, routing: str, region: str, tier: str, lp: int, 
         match_id_str = detail["metadata"]["match_id"]
 
         game_datetime = insert_match(match_id_str, info)
+        tft_set = info.get("tft_set_core_name", "TFTSet16")
 
         for participant in info["participants"]:
             try:
-                insert_participant(match_id_str, region, tier, game_datetime, participant)
+                insert_participant(match_id_str, region, tier, game_datetime, tft_set, participant)
             except DuplicateKeyError:
                 pass  # อีก 7 คนในแมตช์นี้อาจถูก insert ไปแล้วตอนประมวลผล summoner คนอื่น
 

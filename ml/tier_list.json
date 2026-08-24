@@ -3,1607 +3,2657 @@
     {
       "name": "TFT17_Astronaut",
       "style": 5,
+      "play_count": 85,
+      "avg_placement": 2.09,
+      "top4_rate": 91.8,
+      "tier": "S"
+    },
+    {
+      "name": "TFT17_SpaceGroove",
+      "style": 5,
+      "play_count": 44,
+      "avg_placement": 3.25,
+      "top4_rate": 84.1,
+      "tier": "S"
+    },
+    {
+      "name": "TFT17_ResistTank",
+      "style": 4,
+      "play_count": 79,
+      "avg_placement": 3.37,
+      "top4_rate": 78.5,
+      "tier": "S"
+    },
+    {
+      "name": "TFT17_Stargazer_Mountain",
+      "style": 4,
+      "play_count": 437,
+      "avg_placement": 2.97,
+      "top4_rate": 78.3,
+      "tier": "S"
+    },
+    {
+      "name": "TFT17_Stargazer_Wolf",
+      "style": 4,
       "play_count": 37,
-      "avg_placement": 1.76,
-      "top4_rate": 91.9,
+      "avg_placement": 3.19,
+      "top4_rate": 75.7,
+      "tier": "S"
+    },
+    {
+      "name": "TFT16_Freljord",
+      "style": 4,
+      "play_count": 127,
+      "avg_placement": 3.35,
+      "top4_rate": 74.8,
+      "tier": "S"
+    },
+    {
+      "name": "TFT16_DarkinWeapon",
+      "style": 4,
+      "play_count": 54,
+      "avg_placement": 3.11,
+      "top4_rate": 74.1,
       "tier": "S"
     },
     {
       "name": "TFT16_SylasTrait",
       "style": 3,
-      "play_count": 39,
-      "avg_placement": 3.26,
-      "top4_rate": 76.9,
+      "play_count": 277,
+      "avg_placement": 3.25,
+      "top4_rate": 73.6,
       "tier": "S"
     },
     {
-      "name": "TFT17_SummonTrait",
+      "name": "TFT17_AssassinTrait",
       "style": 4,
-      "play_count": 122,
-      "avg_placement": 3.39,
-      "top4_rate": 73.8,
+      "play_count": 30,
+      "avg_placement": 4.0,
+      "top4_rate": 73.3,
       "tier": "S"
     },
     {
-      "name": "TFT16_Harvester",
-      "style": 3,
-      "play_count": 42,
-      "avg_placement": 3.76,
+      "name": "TFT17_RangedTrait",
+      "style": 4,
+      "play_count": 269,
+      "avg_placement": 3.39,
       "top4_rate": 71.4,
       "tier": "S"
     },
     {
-      "name": "TFT16_ShyvanaUnique",
-      "style": 3,
-      "play_count": 75,
-      "avg_placement": 3.64,
-      "top4_rate": 69.3,
-      "tier": "S"
-    },
-    {
-      "name": "TFT17_ManaTrait",
-      "style": 2,
-      "play_count": 521,
-      "avg_placement": 3.67,
-      "top4_rate": 68.9,
-      "tier": "S"
-    },
-    {
-      "name": "TFT17_SpaceGroove",
+      "name": "TFT16_Invoker",
       "style": 4,
-      "play_count": 266,
-      "avg_placement": 3.53,
-      "top4_rate": 68.4,
+      "play_count": 131,
+      "avg_placement": 3.32,
+      "top4_rate": 71.0,
       "tier": "S"
     },
     {
       "name": "TFT16_RuneMage",
       "style": 3,
-      "play_count": 38,
-      "avg_placement": 3.68,
-      "top4_rate": 68.4,
+      "play_count": 147,
+      "avg_placement": 3.59,
+      "top4_rate": 70.1,
       "tier": "S"
     },
     {
-      "name": "TFT17_MeleeTrait",
-      "style": 4,
-      "play_count": 37,
-      "avg_placement": 3.49,
-      "top4_rate": 67.6,
-      "tier": "S"
-    },
-    {
-      "name": "TFT17_RangedTrait",
+      "name": "TFT16_Vanquisher",
       "style": 2,
-      "play_count": 308,
-      "avg_placement": 3.77,
+      "play_count": 45,
+      "avg_placement": 3.58,
+      "top4_rate": 68.9,
+      "tier": "S"
+    },
+    {
+      "name": "TFT17_ManaTrait",
+      "style": 4,
+      "play_count": 1772,
+      "avg_placement": 3.7,
+      "top4_rate": 66.4,
+      "tier": "S"
+    },
+    {
+      "name": "TFT16_BaronUnique",
+      "style": 3,
+      "play_count": 71,
+      "avg_placement": 3.59,
+      "top4_rate": 66.2,
+      "tier": "S"
+    },
+    {
+      "name": "TFT17_Stargazer_Wolf",
+      "style": 2,
+      "play_count": 221,
+      "avg_placement": 3.52,
+      "top4_rate": 66.1,
+      "tier": "S"
+    },
+    {
+      "name": "TFT17_ASTrait",
+      "style": 4,
+      "play_count": 166,
+      "avg_placement": 3.74,
+      "top4_rate": 65.7,
+      "tier": "S"
+    },
+    {
+      "name": "TFT16_Chronokeeper",
+      "style": 3,
+      "play_count": 401,
+      "avg_placement": 3.58,
       "top4_rate": 65.3,
       "tier": "S"
     },
     {
-      "name": "TFT17_ShieldTank",
+      "name": "TFT17_Mecha",
       "style": 4,
-      "play_count": 364,
+      "play_count": 398,
       "avg_placement": 3.72,
-      "top4_rate": 65.1,
-      "tier": "S"
-    },
-    {
-      "name": "TFT17_Stargazer_Mountain",
-      "style": 4,
-      "play_count": 134,
-      "avg_placement": 3.76,
-      "top4_rate": 64.9,
+      "top4_rate": 64.3,
       "tier": "A"
     },
     {
-      "name": "TFT17_RangedTrait",
-      "style": 4,
-      "play_count": 47,
-      "avg_placement": 3.96,
-      "top4_rate": 63.8,
-      "tier": "A"
-    },
-    {
-      "name": "TFT17_Fateweaver",
-      "style": 4,
-      "play_count": 394,
-      "avg_placement": 3.81,
-      "top4_rate": 63.7,
-      "tier": "A"
-    },
-    {
-      "name": "TFT17_Stargazer_Serpent",
-      "style": 2,
-      "play_count": 37,
-      "avg_placement": 3.62,
-      "top4_rate": 62.2,
-      "tier": "A"
-    },
-    {
-      "name": "TFT17_SonaUniqueTrait",
+      "name": "TFT16_KindredUnique",
       "style": 3,
-      "play_count": 2134,
-      "avg_placement": 3.89,
-      "top4_rate": 62.1,
-      "tier": "A"
-    },
-    {
-      "name": "TFT17_MorganaUniqueTrait",
-      "style": 3,
-      "play_count": 4237,
-      "avg_placement": 3.91,
-      "top4_rate": 61.5,
-      "tier": "A"
-    },
-    {
-      "name": "TFT17_AssassinTrait",
-      "style": 2,
-      "play_count": 470,
-      "avg_placement": 4.0,
-      "top4_rate": 61.1,
-      "tier": "A"
-    },
-    {
-      "name": "TFT16_Soulbound",
-      "style": 3,
-      "play_count": 48,
-      "avg_placement": 4.17,
-      "top4_rate": 60.4,
-      "tier": "A"
-    },
-    {
-      "name": "TFT16_Targon",
-      "style": 4,
-      "play_count": 94,
-      "avg_placement": 4.02,
-      "top4_rate": 59.6,
-      "tier": "A"
-    },
-    {
-      "name": "TFT16_Void",
-      "style": 1,
-      "play_count": 32,
-      "avg_placement": 3.91,
-      "top4_rate": 59.4,
+      "play_count": 325,
+      "avg_placement": 3.8,
+      "top4_rate": 64.3,
       "tier": "A"
     },
     {
       "name": "TFT17_JhinUniqueTrait",
       "style": 3,
-      "play_count": 1442,
-      "avg_placement": 4.04,
-      "top4_rate": 59.4,
+      "play_count": 4953,
+      "avg_placement": 3.74,
+      "top4_rate": 64.3,
       "tier": "A"
     },
     {
-      "name": "TFT17_Stargazer_Wolf",
-      "style": 2,
-      "play_count": 48,
-      "avg_placement": 4.38,
-      "top4_rate": 58.3,
-      "tier": "A"
-    },
-    {
-      "name": "TFT16_Gunslinger",
-      "style": 1,
-      "play_count": 31,
-      "avg_placement": 4.26,
-      "top4_rate": 58.1,
-      "tier": "A"
-    },
-    {
-      "name": "TFT17_ShenUniqueTrait",
+      "name": "TFT16_Soulbound",
       "style": 3,
-      "play_count": 5237,
-      "avg_placement": 4.07,
-      "top4_rate": 57.9,
+      "play_count": 312,
+      "avg_placement": 3.7,
+      "top4_rate": 64.1,
       "tier": "A"
     },
     {
-      "name": "TFT17_Stargazer_Shield",
-      "style": 4,
-      "play_count": 249,
-      "avg_placement": 4.23,
-      "top4_rate": 57.8,
+      "name": "TFT16_Heroic",
+      "style": 3,
+      "play_count": 148,
+      "avg_placement": 3.86,
+      "top4_rate": 63.5,
       "tier": "A"
     },
     {
       "name": "TFT17_RhaastUniqueTrait",
       "style": 3,
-      "play_count": 2375,
-      "avg_placement": 4.13,
-      "top4_rate": 57.7,
+      "play_count": 9361,
+      "avg_placement": 3.8,
+      "top4_rate": 63.3,
       "tier": "A"
     },
     {
-      "name": "TFT16_Ionia",
-      "style": 1,
-      "play_count": 33,
-      "avg_placement": 4.03,
-      "top4_rate": 57.6,
-      "tier": "A"
-    },
-    {
-      "name": "TFT17_BlitzcrankUniqueTrait",
+      "name": "TFT16_XerathUnique",
       "style": 3,
-      "play_count": 4817,
-      "avg_placement": 4.12,
-      "top4_rate": 57.5,
+      "play_count": 115,
+      "avg_placement": 3.89,
+      "top4_rate": 62.6,
       "tier": "A"
     },
     {
-      "name": "TFT17_Stargazer_Medallion",
+      "name": "TFT17_ShieldTank",
       "style": 4,
-      "play_count": 367,
+      "play_count": 198,
       "avg_placement": 4.16,
-      "top4_rate": 57.2,
+      "top4_rate": 62.6,
       "tier": "A"
     },
     {
-      "name": "TFT16_Yordle",
-      "style": 1,
-      "play_count": 42,
-      "avg_placement": 4.19,
-      "top4_rate": 57.1,
-      "tier": "A"
-    },
-    {
-      "name": "TFT17_Primordian",
+      "name": "TFT16_Shurima",
       "style": 4,
-      "play_count": 606,
-      "avg_placement": 4.25,
-      "top4_rate": 56.8,
+      "play_count": 56,
+      "avg_placement": 3.98,
+      "top4_rate": 62.5,
       "tier": "A"
     },
     {
-      "name": "TFT17_Timebreaker",
-      "style": 2,
-      "play_count": 240,
-      "avg_placement": 4.28,
-      "top4_rate": 56.7,
+      "name": "TFT17_ShenUniqueTrait",
+      "style": 3,
+      "play_count": 13965,
+      "avg_placement": 3.88,
+      "top4_rate": 62.0,
       "tier": "A"
     },
     {
-      "name": "TFT17_PsyOps",
+      "name": "TFT16_Noxus",
       "style": 1,
-      "play_count": 1927,
-      "avg_placement": 4.17,
-      "top4_rate": 56.1,
-      "tier": "A"
-    },
-    {
-      "name": "TFT16_Juggernaut",
-      "style": 1,
-      "play_count": 114,
-      "avg_placement": 4.26,
-      "top4_rate": 56.1,
-      "tier": "A"
-    },
-    {
-      "name": "TFT17_APTrait",
-      "style": 1,
-      "play_count": 2392,
-      "avg_placement": 4.13,
-      "top4_rate": 56.0,
-      "tier": "A"
-    },
-    {
-      "name": "TFT16_Invoker",
-      "style": 1,
-      "play_count": 75,
-      "avg_placement": 4.21,
-      "top4_rate": 56.0,
-      "tier": "A"
-    },
-    {
-      "name": "TFT17_Stargazer_Wolf",
-      "style": 1,
-      "play_count": 195,
-      "avg_placement": 4.25,
-      "top4_rate": 55.9,
-      "tier": "A"
-    },
-    {
-      "name": "TFT17_MeleeTrait",
-      "style": 2,
-      "play_count": 756,
-      "avg_placement": 4.18,
-      "top4_rate": 55.8,
+      "play_count": 86,
+      "avg_placement": 3.93,
+      "top4_rate": 61.6,
       "tier": "A"
     },
     {
       "name": "TFT16_Freljord",
       "style": 1,
-      "play_count": 47,
-      "avg_placement": 4.32,
-      "top4_rate": 55.3,
+      "play_count": 161,
+      "avg_placement": 3.91,
+      "top4_rate": 61.5,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_SpaceGroove",
+      "style": 4,
+      "play_count": 519,
+      "avg_placement": 3.91,
+      "top4_rate": 61.5,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Juggernaut",
+      "style": 2,
+      "play_count": 39,
+      "avg_placement": 3.97,
+      "top4_rate": 61.5,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_SummonTrait",
+      "style": 4,
+      "play_count": 315,
+      "avg_placement": 3.87,
+      "top4_rate": 61.3,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_APTrait",
+      "style": 4,
+      "play_count": 191,
+      "avg_placement": 4.34,
+      "top4_rate": 61.3,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_ShyvanaUnique",
+      "style": 3,
+      "play_count": 443,
+      "avg_placement": 3.75,
+      "top4_rate": 61.2,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Demacia",
+      "style": 1,
+      "play_count": 74,
+      "avg_placement": 4.01,
+      "top4_rate": 60.8,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_AatroxUnique",
+      "style": 3,
+      "play_count": 263,
+      "avg_placement": 3.91,
+      "top4_rate": 60.8,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Defender",
+      "style": 2,
+      "play_count": 48,
+      "avg_placement": 3.77,
+      "top4_rate": 60.4,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_Stargazer_Serpent",
+      "style": 2,
+      "play_count": 88,
+      "avg_placement": 4.0,
+      "top4_rate": 60.2,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Blacksmith",
+      "style": 3,
+      "play_count": 637,
+      "avg_placement": 3.96,
+      "top4_rate": 59.7,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_Timebreaker",
+      "style": 4,
+      "play_count": 3721,
+      "avg_placement": 3.97,
+      "top4_rate": 59.5,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_ResistTank",
+      "style": 2,
+      "play_count": 1913,
+      "avg_placement": 4.11,
+      "top4_rate": 59.5,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Freljord",
+      "style": 2,
+      "play_count": 71,
+      "avg_placement": 4.14,
+      "top4_rate": 59.2,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Rapidfire",
+      "style": 1,
+      "play_count": 257,
+      "avg_placement": 4.16,
+      "top4_rate": 58.8,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_TheBoss",
+      "style": 3,
+      "play_count": 138,
+      "avg_placement": 3.91,
+      "top4_rate": 58.7,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_RangedTrait",
+      "style": 2,
+      "play_count": 995,
+      "avg_placement": 4.0,
+      "top4_rate": 58.7,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_SonaUniqueTrait",
+      "style": 3,
+      "play_count": 3466,
+      "avg_placement": 4.07,
+      "top4_rate": 58.7,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_Mecha",
+      "style": 2,
+      "play_count": 1498,
+      "avg_placement": 4.05,
+      "top4_rate": 58.6,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_MorganaUniqueTrait",
+      "style": 3,
+      "play_count": 13032,
+      "avg_placement": 4.05,
+      "top4_rate": 58.5,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_HPTank",
+      "style": 4,
+      "play_count": 500,
+      "avg_placement": 4.23,
+      "top4_rate": 58.4,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_BlitzcrankUniqueTrait",
+      "style": 3,
+      "play_count": 12067,
+      "avg_placement": 4.05,
+      "top4_rate": 58.4,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_ZedUniqueTrait",
+      "style": 3,
+      "play_count": 4074,
+      "avg_placement": 4.01,
+      "top4_rate": 58.4,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_Stargazer_Huntress",
+      "style": 2,
+      "play_count": 79,
+      "avg_placement": 4.19,
+      "top4_rate": 58.2,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_Fateweaver",
+      "style": 4,
+      "play_count": 2032,
+      "avg_placement": 4.16,
+      "top4_rate": 58.0,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Harvester",
+      "style": 3,
+      "play_count": 329,
+      "avg_placement": 4.02,
+      "top4_rate": 57.8,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Sorcerer",
+      "style": 4,
+      "play_count": 64,
+      "avg_placement": 3.98,
+      "top4_rate": 57.8,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Zaun",
+      "style": 4,
+      "play_count": 45,
+      "avg_placement": 4.33,
+      "top4_rate": 57.8,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_MeleeTrait",
+      "style": 4,
+      "play_count": 163,
+      "avg_placement": 4.29,
+      "top4_rate": 57.7,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_FlexTrait",
+      "style": 4,
+      "play_count": 35,
+      "avg_placement": 4.4,
+      "top4_rate": 57.1,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_DarkChild",
+      "style": 3,
+      "play_count": 210,
+      "avg_placement": 4.1,
+      "top4_rate": 57.1,
+      "tier": "A"
+    },
+    {
+      "name": "TFT17_Stargazer_Fountain",
+      "style": 4,
+      "play_count": 81,
+      "avg_placement": 4.36,
+      "top4_rate": 56.8,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Sorcerer",
+      "style": 2,
+      "play_count": 81,
+      "avg_placement": 4.02,
+      "top4_rate": 56.8,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Warden",
+      "style": 2,
+      "play_count": 193,
+      "avg_placement": 4.1,
+      "top4_rate": 56.5,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_DarkinWeapon",
+      "style": 2,
+      "play_count": 140,
+      "avg_placement": 4.11,
+      "top4_rate": 56.4,
+      "tier": "A"
+    },
+    {
+      "name": "TFT16_Slayer",
+      "style": 1,
+      "play_count": 204,
+      "avg_placement": 4.28,
+      "top4_rate": 55.9,
       "tier": "A"
     },
     {
       "name": "TFT17_FioraUniqueTrait",
       "style": 3,
-      "play_count": 3803,
-      "avg_placement": 4.18,
-      "top4_rate": 55.3,
+      "play_count": 5848,
+      "avg_placement": 4.19,
+      "top4_rate": 55.7,
       "tier": "A"
     },
     {
-      "name": "TFT16_Brawler",
-      "style": 1,
-      "play_count": 85,
-      "avg_placement": 4.2,
-      "top4_rate": 55.3,
-      "tier": "A"
-    },
-    {
-      "name": "TFT16_Magus",
-      "style": 1,
-      "play_count": 47,
-      "avg_placement": 4.26,
-      "top4_rate": 55.3,
+      "name": "TFT16_AurelionSolUnique",
+      "style": 3,
+      "play_count": 153,
+      "avg_placement": 4.29,
+      "top4_rate": 55.6,
       "tier": "A"
     },
     {
       "name": "TFT17_DarkStar",
       "style": 1,
-      "play_count": 5342,
-      "avg_placement": 4.26,
-      "top4_rate": 55.3,
+      "play_count": 7669,
+      "avg_placement": 4.21,
+      "top4_rate": 55.6,
       "tier": "A"
     },
     {
-      "name": "TFT17_SummonTrait",
-      "style": 1,
-      "play_count": 3476,
-      "avg_placement": 4.25,
-      "top4_rate": 54.8,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_VexUniqueTrait",
-      "style": 3,
-      "play_count": 3039,
-      "avg_placement": 4.24,
-      "top4_rate": 54.5,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_Stargazer_Serpent",
-      "style": 1,
-      "play_count": 210,
-      "avg_placement": 4.36,
-      "top4_rate": 54.3,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_DRX",
-      "style": 4,
-      "play_count": 1471,
-      "avg_placement": 4.29,
-      "top4_rate": 54.2,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_SummonTrait",
-      "style": 2,
-      "play_count": 286,
-      "avg_placement": 4.32,
-      "top4_rate": 54.2,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_SpaceGroove",
-      "style": 1,
-      "play_count": 6491,
-      "avg_placement": 4.33,
-      "top4_rate": 54.0,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_ResistTank",
-      "style": 2,
-      "play_count": 437,
-      "avg_placement": 4.31,
-      "top4_rate": 54.0,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_ResistTank",
-      "style": 1,
-      "play_count": 8122,
-      "avg_placement": 4.29,
-      "top4_rate": 53.7,
-      "tier": "B"
-    },
-    {
-      "name": "TFT16_Heroic",
-      "style": 3,
-      "play_count": 56,
-      "avg_placement": 4.46,
-      "top4_rate": 53.6,
-      "tier": "B"
-    },
-    {
       "name": "TFT17_ManaTrait",
-      "style": 1,
-      "play_count": 4618,
-      "avg_placement": 4.32,
-      "top4_rate": 53.3,
-      "tier": "B"
+      "style": 2,
+      "play_count": 4308,
+      "avg_placement": 4.21,
+      "top4_rate": 55.6,
+      "tier": "A"
     },
     {
-      "name": "TFT17_AssassinTrait",
-      "style": 1,
-      "play_count": 2844,
-      "avg_placement": 4.33,
-      "top4_rate": 53.2,
-      "tier": "B"
+      "name": "TFT17_Timebreaker",
+      "style": 2,
+      "play_count": 3617,
+      "avg_placement": 4.29,
+      "top4_rate": 55.0,
+      "tier": "A"
     },
     {
       "name": "TFT17_FlexTrait",
-      "style": 1,
-      "play_count": 4995,
-      "avg_placement": 4.36,
-      "top4_rate": 52.8,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_MeleeTrait",
-      "style": 1,
-      "play_count": 4344,
-      "avg_placement": 4.36,
-      "top4_rate": 52.2,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_ShieldTank",
-      "style": 1,
-      "play_count": 5415,
-      "avg_placement": 4.39,
-      "top4_rate": 52.1,
+      "style": 2,
+      "play_count": 1761,
+      "avg_placement": 4.31,
+      "top4_rate": 54.9,
       "tier": "B"
     },
     {
       "name": "TFT16_Piltover",
       "style": 1,
-      "play_count": 71,
-      "avg_placement": 4.34,
-      "top4_rate": 52.1,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_Timebreaker",
-      "style": 1,
-      "play_count": 1737,
-      "avg_placement": 4.33,
-      "top4_rate": 52.0,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_Astronaut",
-      "style": 2,
-      "play_count": 648,
-      "avg_placement": 4.38,
-      "top4_rate": 51.7,
+      "play_count": 219,
+      "avg_placement": 4.16,
+      "top4_rate": 54.8,
       "tier": "B"
     },
     {
       "name": "TFT17_ShieldTank",
       "style": 2,
-      "play_count": 2109,
-      "avg_placement": 4.44,
-      "top4_rate": 51.7,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_SpaceGroove",
-      "style": 2,
-      "play_count": 1273,
-      "avg_placement": 4.38,
-      "top4_rate": 51.6,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_ASTrait",
-      "style": 1,
-      "play_count": 1677,
-      "avg_placement": 4.47,
-      "top4_rate": 51.0,
-      "tier": "B"
-    },
-    {
-      "name": "TFT16_Defender",
-      "style": 1,
-      "play_count": 169,
-      "avg_placement": 4.35,
-      "top4_rate": 50.9,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_FlexTrait",
-      "style": 2,
-      "play_count": 1117,
-      "avg_placement": 4.45,
-      "top4_rate": 50.9,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_Timebreaker",
-      "style": 4,
-      "play_count": 305,
-      "avg_placement": 4.53,
-      "top4_rate": 50.8,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_DarkStar",
-      "style": 4,
-      "play_count": 174,
-      "avg_placement": 4.43,
-      "top4_rate": 50.6,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_Astronaut",
-      "style": 1,
-      "play_count": 1575,
-      "avg_placement": 4.54,
-      "top4_rate": 50.4,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_HPTank",
-      "style": 1,
-      "play_count": 5734,
-      "avg_placement": 4.45,
-      "top4_rate": 50.3,
-      "tier": "B"
-    },
-    {
-      "name": "TFT16_Blacksmith",
-      "style": 3,
-      "play_count": 38,
-      "avg_placement": 4.68,
-      "top4_rate": 50.0,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_DRX",
-      "style": 1,
-      "play_count": 4193,
-      "avg_placement": 4.5,
-      "top4_rate": 49.9,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_GravesTrait",
-      "style": 3,
-      "play_count": 2985,
-      "avg_placement": 4.49,
-      "top4_rate": 49.9,
+      "play_count": 3260,
+      "avg_placement": 4.28,
+      "top4_rate": 54.8,
       "tier": "B"
     },
     {
       "name": "TFT16_Sorcerer",
       "style": 1,
-      "play_count": 109,
-      "avg_placement": 4.37,
-      "top4_rate": 49.5,
+      "play_count": 428,
+      "avg_placement": 4.27,
+      "top4_rate": 54.7,
       "tier": "B"
     },
     {
-      "name": "TFT17_Mecha",
-      "style": 4,
-      "play_count": 1848,
-      "avg_placement": 4.49,
-      "top4_rate": 49.4,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_RangedTrait",
+      "name": "TFT16_Juggernaut",
       "style": 1,
-      "play_count": 1102,
-      "avg_placement": 4.59,
-      "top4_rate": 49.3,
+      "play_count": 562,
+      "avg_placement": 4.2,
+      "top4_rate": 54.4,
       "tier": "B"
     },
     {
-      "name": "TFT17_ADMIN",
+      "name": "TFT16_Defender",
       "style": 1,
-      "play_count": 1499,
-      "avg_placement": 4.6,
-      "top4_rate": 49.1,
+      "play_count": 632,
+      "avg_placement": 4.28,
+      "top4_rate": 54.4,
       "tier": "B"
     },
     {
-      "name": "TFT17_ZedUniqueTrait",
-      "style": 3,
-      "play_count": 147,
-      "avg_placement": 4.48,
-      "top4_rate": 49.0,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_TahmKenchUniqueTrait",
-      "style": 3,
-      "play_count": 4662,
-      "avg_placement": 4.54,
-      "top4_rate": 48.9,
-      "tier": "B"
-    },
-    {
-      "name": "TFT17_HPTank",
+      "name": "TFT17_MeleeTrait",
       "style": 2,
-      "play_count": 517,
-      "avg_placement": 4.63,
-      "top4_rate": 48.9,
+      "play_count": 1079,
+      "avg_placement": 4.39,
+      "top4_rate": 54.4,
       "tier": "B"
     },
     {
-      "name": "TFT17_Fateweaver",
-      "style": 1,
-      "play_count": 1340,
-      "avg_placement": 4.62,
-      "top4_rate": 48.6,
+      "name": "TFT17_AssassinTrait",
+      "style": 2,
+      "play_count": 656,
+      "avg_placement": 4.35,
+      "top4_rate": 54.1,
       "tier": "B"
     },
     {
-      "name": "TFT16_Warden",
+      "name": "TFT17_ResistTank",
       "style": 1,
-      "play_count": 46,
-      "avg_placement": 4.5,
-      "top4_rate": 47.8,
+      "play_count": 20999,
+      "avg_placement": 4.26,
+      "top4_rate": 54.1,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Invoker",
+      "style": 1,
+      "play_count": 333,
+      "avg_placement": 4.26,
+      "top4_rate": 54.1,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_Stargazer_Shield",
+      "style": 4,
+      "play_count": 964,
+      "avg_placement": 4.35,
+      "top4_rate": 53.9,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Emperor",
+      "style": 3,
+      "play_count": 332,
+      "avg_placement": 4.18,
+      "top4_rate": 53.9,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_VexUniqueTrait",
+      "style": 3,
+      "play_count": 4086,
+      "avg_placement": 4.23,
+      "top4_rate": 53.9,
       "tier": "B"
     },
     {
       "name": "TFT17_PsyOps",
       "style": 4,
-      "play_count": 223,
-      "avg_placement": 4.75,
-      "top4_rate": 45.7,
+      "play_count": 589,
+      "avg_placement": 4.42,
+      "top4_rate": 53.7,
       "tier": "B"
     },
     {
-      "name": "TFT17_ADMIN",
+      "name": "TFT16_Rapidfire",
+      "style": 2,
+      "play_count": 41,
+      "avg_placement": 4.44,
+      "top4_rate": 53.7,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Targon",
       "style": 4,
-      "play_count": 1059,
-      "avg_placement": 4.75,
-      "top4_rate": 45.7,
+      "play_count": 417,
+      "avg_placement": 4.34,
+      "top4_rate": 53.5,
       "tier": "B"
     },
     {
       "name": "TFT17_DarkStar",
-      "style": 2,
-      "play_count": 103,
-      "avg_placement": 4.76,
-      "top4_rate": 45.6,
+      "style": 4,
+      "play_count": 1324,
+      "avg_placement": 4.31,
+      "top4_rate": 53.5,
       "tier": "B"
     },
     {
-      "name": "TFT17_MissFortuneUniqueTrait",
+      "name": "TFT16_Brawler",
+      "style": 1,
+      "play_count": 553,
+      "avg_placement": 4.32,
+      "top4_rate": 53.5,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Warden",
+      "style": 1,
+      "play_count": 371,
+      "avg_placement": 4.38,
+      "top4_rate": 53.4,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_ASTrait",
+      "style": 2,
+      "play_count": 1252,
+      "avg_placement": 4.36,
+      "top4_rate": 53.3,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_ShieldTank",
+      "style": 1,
+      "play_count": 13927,
+      "avg_placement": 4.3,
+      "top4_rate": 53.2,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Slayer",
+      "style": 2,
+      "play_count": 49,
+      "avg_placement": 4.29,
+      "top4_rate": 53.1,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Longshot",
+      "style": 2,
+      "play_count": 32,
+      "avg_placement": 4.59,
+      "top4_rate": 53.1,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Yordle",
+      "style": 1,
+      "play_count": 138,
+      "avg_placement": 4.42,
+      "top4_rate": 52.9,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_SpaceGroove",
+      "style": 1,
+      "play_count": 11523,
+      "avg_placement": 4.34,
+      "top4_rate": 52.6,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_DRX",
+      "style": 4,
+      "play_count": 3761,
+      "avg_placement": 4.43,
+      "top4_rate": 52.5,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Shurima",
+      "style": 1,
+      "play_count": 126,
+      "avg_placement": 4.33,
+      "top4_rate": 52.4,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Magus",
+      "style": 1,
+      "play_count": 267,
+      "avg_placement": 4.2,
+      "top4_rate": 52.4,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_Stargazer_Medallion",
+      "style": 4,
+      "play_count": 1028,
+      "avg_placement": 4.31,
+      "top4_rate": 52.4,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_MeleeTrait",
+      "style": 1,
+      "play_count": 7782,
+      "avg_placement": 4.39,
+      "top4_rate": 52.0,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_GravesTrait",
       "style": 3,
-      "play_count": 583,
-      "avg_placement": 4.69,
-      "top4_rate": 45.1,
+      "play_count": 5679,
+      "avg_placement": 4.31,
+      "top4_rate": 52.0,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_DarkinWeapon",
+      "style": 1,
+      "play_count": 423,
+      "avg_placement": 4.41,
+      "top4_rate": 51.8,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_Timebreaker",
+      "style": 1,
+      "play_count": 9357,
+      "avg_placement": 4.39,
+      "top4_rate": 51.8,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_HPTank",
+      "style": 2,
+      "play_count": 2900,
+      "avg_placement": 4.43,
+      "top4_rate": 51.7,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_ADMIN",
+      "style": 1,
+      "play_count": 2246,
+      "avg_placement": 4.42,
+      "top4_rate": 51.7,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_Stargazer_Wolf",
+      "style": 1,
+      "play_count": 572,
+      "avg_placement": 4.39,
+      "top4_rate": 51.6,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_Mecha",
+      "style": 1,
+      "play_count": 719,
+      "avg_placement": 4.45,
+      "top4_rate": 51.6,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_AssassinTrait",
+      "style": 1,
+      "play_count": 6845,
+      "avg_placement": 4.45,
+      "top4_rate": 51.4,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_ManaTrait",
+      "style": 1,
+      "play_count": 4571,
+      "avg_placement": 4.42,
+      "top4_rate": 51.4,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_Stargazer_Fountain",
+      "style": 1,
+      "play_count": 736,
+      "avg_placement": 4.52,
+      "top4_rate": 51.4,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_PsyOps",
+      "style": 1,
+      "play_count": 3768,
+      "avg_placement": 4.44,
+      "top4_rate": 51.3,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_DRX",
+      "style": 1,
+      "play_count": 15310,
+      "avg_placement": 4.42,
+      "top4_rate": 51.2,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_FlexTrait",
+      "style": 1,
+      "play_count": 6931,
+      "avg_placement": 4.43,
+      "top4_rate": 51.1,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_APTrait",
+      "style": 1,
+      "play_count": 9009,
+      "avg_placement": 4.42,
+      "top4_rate": 51.0,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_Fateweaver",
+      "style": 1,
+      "play_count": 8082,
+      "avg_placement": 4.41,
+      "top4_rate": 50.9,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_Astronaut",
+      "style": 1,
+      "play_count": 1674,
+      "avg_placement": 4.45,
+      "top4_rate": 50.9,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_RangedTrait",
+      "style": 1,
+      "play_count": 4040,
+      "avg_placement": 4.43,
+      "top4_rate": 50.8,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_HPTank",
+      "style": 1,
+      "play_count": 18689,
+      "avg_placement": 4.45,
+      "top4_rate": 50.7,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_TahmKenchUniqueTrait",
+      "style": 3,
+      "play_count": 13846,
+      "avg_placement": 4.47,
+      "top4_rate": 50.4,
       "tier": "B"
     },
     {
       "name": "TFT17_Stargazer_Huntress",
       "style": 1,
-      "play_count": 166,
-      "avg_placement": 4.71,
-      "top4_rate": 44.6,
-      "tier": "C"
+      "play_count": 602,
+      "avg_placement": 4.4,
+      "top4_rate": 50.3,
+      "tier": "B"
     },
     {
-      "name": "TFT17_ASTrait",
-      "style": 2,
-      "play_count": 137,
-      "avg_placement": 4.64,
-      "top4_rate": 44.5,
-      "tier": "C"
-    },
-    {
-      "name": "TFT17_HPTank",
-      "style": 4,
-      "play_count": 32,
-      "avg_placement": 4.69,
-      "top4_rate": 43.8,
-      "tier": "C"
-    },
-    {
-      "name": "TFT17_Astronaut",
-      "style": 4,
-      "play_count": 794,
-      "avg_placement": 4.65,
-      "top4_rate": 43.8,
-      "tier": "C"
-    },
-    {
-      "name": "TFT17_Stargazer_Fountain",
+      "name": "TFT17_SummonTrait",
       "style": 1,
-      "play_count": 180,
-      "avg_placement": 4.89,
-      "top4_rate": 42.8,
-      "tier": "C"
+      "play_count": 2332,
+      "avg_placement": 4.5,
+      "top4_rate": 50.0,
+      "tier": "B"
     },
     {
-      "name": "TFT17_Mecha",
+      "name": "TFT17_Stargazer_Serpent",
       "style": 1,
-      "play_count": 64,
-      "avg_placement": 4.98,
-      "top4_rate": 42.2,
-      "tier": "C"
+      "play_count": 788,
+      "avg_placement": 4.56,
+      "top4_rate": 49.6,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Yordle",
+      "style": 4,
+      "play_count": 126,
+      "avg_placement": 4.48,
+      "top4_rate": 49.2,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_Primordian",
+      "style": 4,
+      "play_count": 912,
+      "avg_placement": 4.6,
+      "top4_rate": 49.2,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Demacia",
+      "style": 4,
+      "play_count": 65,
+      "avg_placement": 4.6,
+      "top4_rate": 49.2,
+      "tier": "B"
     },
     {
       "name": "TFT17_Primordian",
       "style": 1,
-      "play_count": 89,
-      "avg_placement": 5.07,
-      "top4_rate": 41.6,
-      "tier": "C"
+      "play_count": 470,
+      "avg_placement": 4.71,
+      "top4_rate": 48.7,
+      "tier": "B"
     },
     {
-      "name": "TFT17_Mecha",
+      "name": "TFT17_Astronaut",
       "style": 2,
-      "play_count": 104,
-      "avg_placement": 4.95,
-      "top4_rate": 41.3,
-      "tier": "C"
+      "play_count": 1631,
+      "avg_placement": 4.58,
+      "top4_rate": 48.7,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Ionia",
+      "style": 1,
+      "play_count": 74,
+      "avg_placement": 4.81,
+      "top4_rate": 48.6,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_MissFortuneUniqueTrait",
+      "style": 3,
+      "play_count": 2340,
+      "avg_placement": 4.56,
+      "top4_rate": 48.5,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_SpaceGroove",
+      "style": 2,
+      "play_count": 5149,
+      "avg_placement": 4.62,
+      "top4_rate": 47.8,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Void",
+      "style": 1,
+      "play_count": 80,
+      "avg_placement": 4.49,
+      "top4_rate": 47.5,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Vanquisher",
+      "style": 1,
+      "play_count": 171,
+      "avg_placement": 4.44,
+      "top4_rate": 46.8,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Longshot",
+      "style": 1,
+      "play_count": 228,
+      "avg_placement": 4.66,
+      "top4_rate": 46.5,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Ionia",
+      "style": 4,
+      "play_count": 88,
+      "avg_placement": 4.51,
+      "top4_rate": 45.5,
+      "tier": "B"
     },
     {
       "name": "TFT17_AnimaSquad",
+      "style": 4,
+      "play_count": 493,
+      "avg_placement": 4.71,
+      "top4_rate": 45.2,
+      "tier": "B"
+    },
+    {
+      "name": "TFT17_ASTrait",
       "style": 1,
-      "play_count": 568,
-      "avg_placement": 5.11,
-      "top4_rate": 41.2,
+      "play_count": 3125,
+      "avg_placement": 4.77,
+      "top4_rate": 45.1,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Warden",
+      "style": 4,
+      "play_count": 40,
+      "avg_placement": 4.7,
+      "top4_rate": 45.0,
+      "tier": "B"
+    },
+    {
+      "name": "TFT16_Void",
+      "style": 4,
+      "play_count": 101,
+      "avg_placement": 4.82,
+      "top4_rate": 44.6,
+      "tier": "C"
+    },
+    {
+      "name": "TFT17_ADMIN",
+      "style": 4,
+      "play_count": 533,
+      "avg_placement": 4.79,
+      "top4_rate": 44.5,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_ShadowIsles",
+      "style": 2,
+      "play_count": 45,
+      "avg_placement": 4.73,
+      "top4_rate": 44.4,
       "tier": "C"
     },
     {
       "name": "TFT17_Stargazer_Mountain",
       "style": 2,
-      "play_count": 160,
-      "avg_placement": 5.01,
-      "top4_rate": 40.0,
+      "play_count": 1116,
+      "avg_placement": 4.69,
+      "top4_rate": 44.4,
       "tier": "C"
+    },
+    {
+      "name": "TFT16_Bilgewater",
+      "style": 1,
+      "play_count": 39,
+      "avg_placement": 4.9,
+      "top4_rate": 43.6,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_Gunslinger",
+      "style": 1,
+      "play_count": 296,
+      "avg_placement": 4.78,
+      "top4_rate": 43.2,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_Piltover",
+      "style": 2,
+      "play_count": 42,
+      "avg_placement": 5.07,
+      "top4_rate": 42.9,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_KaisaUnique",
+      "style": 3,
+      "play_count": 150,
+      "avg_placement": 4.86,
+      "top4_rate": 42.7,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_Zaun",
+      "style": 1,
+      "play_count": 45,
+      "avg_placement": 5.07,
+      "top4_rate": 42.2,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_Brawler",
+      "style": 2,
+      "play_count": 57,
+      "avg_placement": 4.61,
+      "top4_rate": 42.1,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_Glutton",
+      "style": 3,
+      "play_count": 175,
+      "avg_placement": 4.83,
+      "top4_rate": 41.7,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_HexMech",
+      "style": 3,
+      "play_count": 101,
+      "avg_placement": 4.61,
+      "top4_rate": 40.6,
+      "tier": "C"
+    },
+    {
+      "name": "TFT17_SummonTrait",
+      "style": 2,
+      "play_count": 1050,
+      "avg_placement": 4.98,
+      "top4_rate": 40.5,
+      "tier": "C"
+    },
+    {
+      "name": "TFT17_Astronaut",
+      "style": 4,
+      "play_count": 557,
+      "avg_placement": 4.85,
+      "top4_rate": 40.4,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_Noxus",
+      "style": 4,
+      "play_count": 97,
+      "avg_placement": 4.91,
+      "top4_rate": 39.2,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_ShadowIsles",
+      "style": 4,
+      "play_count": 58,
+      "avg_placement": 5.03,
+      "top4_rate": 37.9,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_ZaahenTrait",
+      "style": 3,
+      "play_count": 41,
+      "avg_placement": 4.85,
+      "top4_rate": 36.6,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_Ionia",
+      "style": 2,
+      "play_count": 31,
+      "avg_placement": 5.1,
+      "top4_rate": 35.5,
+      "tier": "C"
+    },
+    {
+      "name": "TFT17_DarkStar",
+      "style": 2,
+      "play_count": 449,
+      "avg_placement": 5.28,
+      "top4_rate": 35.4,
+      "tier": "C"
+    },
+    {
+      "name": "TFT16_Huntress",
+      "style": 3,
+      "play_count": 99,
+      "avg_placement": 5.39,
+      "top4_rate": 34.3,
+      "tier": "D"
+    },
+    {
+      "name": "TFT16_Explorer",
+      "style": 2,
+      "play_count": 66,
+      "avg_placement": 5.36,
+      "top4_rate": 31.8,
+      "tier": "D"
+    },
+    {
+      "name": "TFT16_Piltover",
+      "style": 4,
+      "play_count": 57,
+      "avg_placement": 4.86,
+      "top4_rate": 31.6,
+      "tier": "D"
+    },
+    {
+      "name": "TFT16_Caretaker",
+      "style": 3,
+      "play_count": 57,
+      "avg_placement": 5.72,
+      "top4_rate": 28.1,
+      "tier": "D"
+    },
+    {
+      "name": "TFT16_Explorer",
+      "style": 1,
+      "play_count": 39,
+      "avg_placement": 6.0,
+      "top4_rate": 25.6,
+      "tier": "D"
+    },
+    {
+      "name": "TFT17_AnimaSquad",
+      "style": 1,
+      "play_count": 450,
+      "avg_placement": 6.26,
+      "top4_rate": 23.3,
+      "tier": "D"
+    },
+    {
+      "name": "TFT16_Bilgewater",
+      "style": 4,
+      "play_count": 110,
+      "avg_placement": 5.95,
+      "top4_rate": 20.9,
+      "tier": "D"
+    },
+    {
+      "name": "TFT17_Stargazer_Mountain",
+      "style": 1,
+      "play_count": 59,
+      "avg_placement": 6.15,
+      "top4_rate": 20.3,
+      "tier": "D"
     }
   ],
   "comp_tier_list": [
     {
-      "cluster_id": 38,
-      "comp_label": "TFT17_DRX (Bronze) + TFT17_ResistTank (Bronze) + TFT17_AssassinTrait (Bronze) + TFT17_Fateweaver (Prismatic) + TFT17_Timebreaker (Bronze) + TFT17_Stargazer_Medallion (Prismatic)",
-      "play_count": 225,
-      "avg_placement": 3.22,
-      "top4_rate": 76.4,
-      "avg_top4_prob": 67.1,
+      "cluster_id": 7,
+      "comp_label": "TFT17_RhaastUniqueTrait (Gold) + TFT17_HPTank (Bronze) + TFT17_APTrait (Bronze) + TFT17_ResistTank (Bronze) + TFT17_Fateweaver (Bronze) + TFT17_DRX (Bronze)",
+      "play_count": 1276,
+      "avg_placement": 3.13,
+      "top4_rate": 77.0,
+      "avg_top4_prob": 74.4,
       "tier": "S",
       "key_traits": [
-        "TFT17_DRX|1",
-        "TFT17_ResistTank|1",
-        "TFT17_AssassinTrait|1",
-        "TFT17_Fateweaver|4",
-        "TFT17_Timebreaker|1",
-        "TFT17_Stargazer_Medallion|4"
-      ]
-    },
-    {
-      "cluster_id": 33,
-      "comp_label": "TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_SpaceGroove (Prismatic) + TFT17_AssassinTrait (Bronze) + TFT17_ShieldTank (Bronze) + TFT17_APTrait (Bronze) + TFT17_Timebreaker (Bronze)",
-      "play_count": 231,
-      "avg_placement": 3.31,
-      "top4_rate": 71.9,
-      "avg_top4_prob": 66.7,
-      "tier": "S",
-      "key_traits": [
-        "TFT17_BlitzcrankUniqueTrait|3",
-        "TFT17_SpaceGroove|4",
-        "TFT17_AssassinTrait|1",
-        "TFT17_ShieldTank|1",
+        "TFT17_RhaastUniqueTrait|3",
+        "TFT17_HPTank|1",
         "TFT17_APTrait|1",
-        "TFT17_Timebreaker|1"
-      ]
-    },
-    {
-      "cluster_id": 13,
-      "comp_label": "TFT17_HPTank (Bronze) + TFT17_SpaceGroove (Bronze) + TFT17_DRX (Bronze) + TFT17_ResistTank (Bronze) + TFT17_RhaastUniqueTrait (Gold) + TFT17_PsyOps (Bronze)",
-      "play_count": 168,
-      "avg_placement": 3.43,
-      "top4_rate": 70.8,
-      "avg_top4_prob": 64.6,
-      "tier": "S",
-      "key_traits": [
-        "TFT17_HPTank|1",
-        "TFT17_SpaceGroove|1",
-        "TFT17_DRX|1",
         "TFT17_ResistTank|1",
-        "TFT17_RhaastUniqueTrait|3",
-        "TFT17_PsyOps|1"
-      ]
-    },
-    {
-      "cluster_id": 17,
-      "comp_label": "TFT17_APTrait (Bronze) + TFT17_SummonTrait (Bronze) + TFT17_ResistTank (Bronze) + TFT17_DarkStar (Bronze) + TFT17_Astronaut (Silver) + TFT17_FlexTrait (Bronze)",
-      "play_count": 271,
-      "avg_placement": 3.38,
-      "top4_rate": 69.4,
-      "avg_top4_prob": 63.3,
-      "tier": "S",
-      "key_traits": [
-        "TFT17_APTrait|1",
-        "TFT17_SummonTrait|1",
-        "TFT17_ResistTank|1",
-        "TFT17_DarkStar|1",
-        "TFT17_Astronaut|2",
-        "TFT17_FlexTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 9,
-      "comp_label": "TFT17_ResistTank (Bronze) + TFT17_MeleeTrait (Silver) + TFT17_HPTank (Bronze) + TFT17_DRX (Prismatic) + TFT17_ShenUniqueTrait (Gold) + TFT17_FioraUniqueTrait (Gold)",
-      "play_count": 435,
-      "avg_placement": 3.52,
-      "top4_rate": 68.7,
-      "avg_top4_prob": 64.0,
-      "tier": "S",
-      "key_traits": [
-        "TFT17_ResistTank|1",
-        "TFT17_MeleeTrait|2",
-        "TFT17_HPTank|1",
-        "TFT17_DRX|4",
-        "TFT17_ShenUniqueTrait|3",
-        "TFT17_FioraUniqueTrait|3"
-      ]
-    },
-    {
-      "cluster_id": 44,
-      "comp_label": "TFT17_JhinUniqueTrait (Gold) + TFT17_DarkStar (Bronze) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_HPTank (Silver) + TFT17_Timebreaker (Prismatic) + TFT17_RangedTrait (Bronze)",
-      "play_count": 157,
-      "avg_placement": 3.86,
-      "top4_rate": 65.0,
-      "avg_top4_prob": 60.4,
-      "tier": "A",
-      "key_traits": [
-        "TFT17_JhinUniqueTrait|3",
-        "TFT17_DarkStar|1",
-        "TFT17_TahmKenchUniqueTrait|3",
-        "TFT17_HPTank|2",
-        "TFT17_Timebreaker|4",
-        "TFT17_RangedTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 12,
-      "comp_label": "TFT17_ShieldTank (Bronze) + TFT17_DarkStar (Bronze) + TFT17_RhaastUniqueTrait (Gold) + TFT17_PsyOps (Bronze) + TFT17_SummonTrait (Bronze) + TFT17_FlexTrait (Bronze)",
-      "play_count": 575,
-      "avg_placement": 3.75,
-      "top4_rate": 64.3,
-      "avg_top4_prob": 65.5,
-      "tier": "A",
-      "key_traits": [
-        "TFT17_ShieldTank|1",
-        "TFT17_DarkStar|1",
-        "TFT17_RhaastUniqueTrait|3",
-        "TFT17_PsyOps|1",
-        "TFT17_SummonTrait|1",
-        "TFT17_FlexTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 41,
-      "comp_label": "TFT17_SpaceGroove (Silver) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_SummonTrait (Bronze) + TFT17_ShieldTank (Prismatic) + TFT17_DarkStar (Bronze) + TFT17_ADMIN (Bronze)",
-      "play_count": 185,
-      "avg_placement": 3.86,
-      "top4_rate": 63.2,
-      "avg_top4_prob": 60.4,
-      "tier": "A",
-      "key_traits": [
-        "TFT17_SpaceGroove|2",
-        "TFT17_BlitzcrankUniqueTrait|3",
-        "TFT17_SummonTrait|1",
-        "TFT17_ShieldTank|4",
-        "TFT17_DarkStar|1",
-        "TFT17_ADMIN|1"
-      ]
-    },
-    {
-      "cluster_id": 39,
-      "comp_label": "TFT17_JhinUniqueTrait (Gold) + TFT17_DarkStar (Bronze) + TFT17_RangedTrait (Silver) + TFT17_ShieldTank (Bronze) + TFT17_ResistTank (Bronze) + TFT17_Astronaut (Bronze)",
-      "play_count": 172,
-      "avg_placement": 3.9,
-      "top4_rate": 62.8,
-      "avg_top4_prob": 60.7,
-      "tier": "A",
-      "key_traits": [
-        "TFT17_JhinUniqueTrait|3",
-        "TFT17_DarkStar|1",
-        "TFT17_RangedTrait|2",
-        "TFT17_ShieldTank|1",
-        "TFT17_ResistTank|1",
-        "TFT17_Astronaut|1"
-      ]
-    },
-    {
-      "cluster_id": 1,
-      "comp_label": "TFT17_ShieldTank (Silver) + TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_SummonTrait (Bronze) + TFT17_DarkStar (Bronze) + TFT17_FlexTrait (Bronze)",
-      "play_count": 637,
-      "avg_placement": 3.93,
-      "top4_rate": 62.5,
-      "avg_top4_prob": 60.9,
-      "tier": "A",
-      "key_traits": [
-        "TFT17_ShieldTank|2",
-        "TFT17_SpaceGroove|1",
-        "TFT17_BlitzcrankUniqueTrait|3",
-        "TFT17_SummonTrait|1",
-        "TFT17_DarkStar|1",
-        "TFT17_FlexTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 45,
-      "comp_label": "TFT17_SpaceGroove (Bronze) + TFT17_ShieldTank (Prismatic) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_SummonTrait (Bronze) + TFT17_DarkStar (Bronze) + TFT17_FlexTrait (Bronze)",
-      "play_count": 222,
-      "avg_placement": 3.9,
-      "top4_rate": 61.3,
-      "avg_top4_prob": 60.6,
-      "tier": "A",
-      "key_traits": [
-        "TFT17_SpaceGroove|1",
-        "TFT17_ShieldTank|4",
-        "TFT17_BlitzcrankUniqueTrait|3",
-        "TFT17_SummonTrait|1",
-        "TFT17_DarkStar|1",
-        "TFT17_FlexTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 25,
-      "comp_label": "TFT17_ShieldTank (Silver) + TFT17_SpaceGroove (Bronze) + TFT17_DarkStar (Bronze) + TFT17_SummonTrait (Silver) + TFT17_ADMIN (Bronze) + TFT17_SonaUniqueTrait (Gold)",
-      "play_count": 226,
-      "avg_placement": 4.08,
-      "top4_rate": 60.2,
-      "avg_top4_prob": 52.4,
-      "tier": "A",
-      "key_traits": [
-        "TFT17_ShieldTank|2",
-        "TFT17_SpaceGroove|1",
-        "TFT17_DarkStar|1",
-        "TFT17_SummonTrait|2",
-        "TFT17_ADMIN|1",
-        "TFT17_SonaUniqueTrait|3"
-      ]
-    },
-    {
-      "cluster_id": 6,
-      "comp_label": "TFT17_AssassinTrait (Silver) + TFT17_SpaceGroove (Bronze) + TFT17_ResistTank (Bronze) + TFT17_RhaastUniqueTrait (Gold) + TFT17_Astronaut (Bronze) + TFT17_DarkStar (Bronze)",
-      "play_count": 298,
-      "avg_placement": 4.06,
-      "top4_rate": 60.1,
-      "avg_top4_prob": 57.7,
-      "tier": "A",
-      "key_traits": [
-        "TFT17_AssassinTrait|2",
-        "TFT17_SpaceGroove|1",
-        "TFT17_ResistTank|1",
-        "TFT17_RhaastUniqueTrait|3",
-        "TFT17_Astronaut|1",
-        "TFT17_DarkStar|1"
-      ]
-    },
-    {
-      "cluster_id": 3,
-      "comp_label": "TFT17_MeleeTrait (Bronze) + TFT17_HPTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_Mecha (Prismatic) + TFT17_FioraUniqueTrait (Gold) + TFT17_ManaTrait (Bronze)",
-      "play_count": 878,
-      "avg_placement": 4.05,
-      "top4_rate": 57.5,
-      "avg_top4_prob": 57.2,
-      "tier": "A",
-      "key_traits": [
-        "TFT17_MeleeTrait|1",
-        "TFT17_HPTank|1",
-        "TFT17_TahmKenchUniqueTrait|3",
-        "TFT17_Mecha|4",
-        "TFT17_FioraUniqueTrait|3",
-        "TFT17_ManaTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 4,
-      "comp_label": "TFT17_FioraUniqueTrait (Gold) + TFT17_SpaceGroove (Bronze) + TFT17_MeleeTrait (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_ShieldTank (Bronze) + TFT17_DRX (Bronze)",
-      "play_count": 1181,
-      "avg_placement": 4.17,
-      "top4_rate": 55.5,
-      "avg_top4_prob": 55.9,
-      "tier": "A",
-      "key_traits": [
-        "TFT17_FioraUniqueTrait|3",
-        "TFT17_SpaceGroove|1",
-        "TFT17_MeleeTrait|1",
-        "TFT17_BlitzcrankUniqueTrait|3",
-        "TFT17_ShieldTank|1",
+        "TFT17_Fateweaver|1",
         "TFT17_DRX|1"
-      ]
-    },
-    {
-      "cluster_id": 30,
-      "comp_label": "TFT17_DRX (Prismatic) + TFT17_MeleeTrait (Bronze) + TFT17_HPTank (Bronze) + TFT17_ResistTank (Bronze) + TFT17_ShenUniqueTrait (Gold) + TFT17_TahmKenchUniqueTrait (Gold)",
-      "play_count": 491,
-      "avg_placement": 4.27,
-      "top4_rate": 55.2,
-      "avg_top4_prob": 53.2,
-      "tier": "A",
-      "key_traits": [
-        "TFT17_DRX|4",
-        "TFT17_MeleeTrait|1",
-        "TFT17_HPTank|1",
-        "TFT17_ResistTank|1",
-        "TFT17_ShenUniqueTrait|3",
-        "TFT17_TahmKenchUniqueTrait|3"
-      ]
-    },
-    {
-      "cluster_id": 29,
-      "comp_label": "TFT17_JhinUniqueTrait (Gold) + TFT17_RangedTrait (Bronze) + TFT17_ResistTank (Bronze) + TFT17_DarkStar (Bronze) + TFT17_ShieldTank (Bronze) + TFT17_ShenUniqueTrait (Gold)",
-      "play_count": 433,
-      "avg_placement": 4.31,
-      "top4_rate": 54.5,
-      "avg_top4_prob": 56.1,
-      "tier": "B",
-      "key_traits": [
-        "TFT17_JhinUniqueTrait|3",
-        "TFT17_RangedTrait|1",
-        "TFT17_ResistTank|1",
-        "TFT17_DarkStar|1",
-        "TFT17_ShieldTank|1",
-        "TFT17_ShenUniqueTrait|3"
-      ]
-    },
-    {
-      "cluster_id": 48,
-      "comp_label": "TFT16_Defender (Bronze) + TFT16_Juggernaut (Bronze) + TFT16_Sorcerer (Bronze) + TFT16_Targon (Prismatic) + TFT16_Brawler (Bronze) + TFT16_Invoker (Bronze)",
-      "play_count": 227,
-      "avg_placement": 4.35,
-      "top4_rate": 52.4,
-      "avg_top4_prob": 47.7,
-      "tier": "B",
-      "key_traits": [
-        "TFT16_Defender|1",
-        "TFT16_Juggernaut|1",
-        "TFT16_Sorcerer|1",
-        "TFT16_Targon|4",
-        "TFT16_Brawler|1",
-        "TFT16_Invoker|1"
-      ]
-    },
-    {
-      "cluster_id": 24,
-      "comp_label": "TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_HPTank (Bronze) + TFT17_DRX (Bronze) + TFT17_ShenUniqueTrait (Gold)",
-      "play_count": 238,
-      "avg_placement": 4.33,
-      "top4_rate": 51.7,
-      "avg_top4_prob": 52.3,
-      "tier": "B",
-      "key_traits": [
-        "TFT17_SpaceGroove|1",
-        "TFT17_BlitzcrankUniqueTrait|3",
-        "TFT17_TahmKenchUniqueTrait|3",
-        "TFT17_HPTank|1",
-        "TFT17_DRX|1",
-        "TFT17_ShenUniqueTrait|3"
-      ]
-    },
-    {
-      "cluster_id": 14,
-      "comp_label": "TFT17_FlexTrait (Silver) + TFT17_ShieldTank (Bronze) + TFT17_DarkStar (Bronze) + TFT17_SonaUniqueTrait (Gold) + TFT17_ADMIN (Bronze) + TFT17_PsyOps (Bronze)",
-      "play_count": 274,
-      "avg_placement": 4.53,
-      "top4_rate": 51.1,
-      "avg_top4_prob": 51.5,
-      "tier": "B",
-      "key_traits": [
-        "TFT17_FlexTrait|2",
-        "TFT17_ShieldTank|1",
-        "TFT17_DarkStar|1",
-        "TFT17_SonaUniqueTrait|3",
-        "TFT17_ADMIN|1",
-        "TFT17_PsyOps|1"
-      ]
-    },
-    {
-      "cluster_id": 31,
-      "comp_label": "TFT17_MeleeTrait (Bronze) + TFT17_DRX (Prismatic) + TFT17_HPTank (Bronze) + TFT17_ASTrait (Bronze) + TFT17_Primordian (Prismatic)",
-      "play_count": 354,
-      "avg_placement": 4.51,
-      "top4_rate": 51.1,
-      "avg_top4_prob": 48.7,
-      "tier": "B",
-      "key_traits": [
-        "TFT17_MeleeTrait|1",
-        "TFT17_DRX|4",
-        "TFT17_HPTank|1",
-        "TFT17_ASTrait|1",
-        "TFT17_Primordian|4"
-      ]
-    },
-    {
-      "cluster_id": 2,
-      "comp_label": "TFT17_SpaceGroove (Silver) + TFT17_APTrait (Bronze) + TFT17_HPTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_Timebreaker (Bronze) + TFT17_AssassinTrait (Bronze)",
-      "play_count": 626,
-      "avg_placement": 4.38,
-      "top4_rate": 51.0,
-      "avg_top4_prob": 53.5,
-      "tier": "B",
-      "key_traits": [
-        "TFT17_SpaceGroove|2",
-        "TFT17_APTrait|1",
-        "TFT17_HPTank|1",
-        "TFT17_TahmKenchUniqueTrait|3",
-        "TFT17_Timebreaker|1",
-        "TFT17_AssassinTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 49,
-      "comp_label": "TFT17_DarkStar (Bronze) + TFT17_APTrait (Bronze) + TFT17_ResistTank (Bronze) + TFT17_FlexTrait (Bronze) + TFT17_Astronaut (Prismatic)",
-      "play_count": 134,
-      "avg_placement": 4.44,
-      "top4_rate": 50.7,
-      "avg_top4_prob": 45.6,
-      "tier": "B",
-      "key_traits": [
-        "TFT17_DarkStar|1",
-        "TFT17_APTrait|1",
-        "TFT17_ResistTank|1",
-        "TFT17_FlexTrait|1",
-        "TFT17_Astronaut|4"
-      ]
-    },
-    {
-      "cluster_id": 37,
-      "comp_label": "TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_ShieldTank (Bronze) + TFT17_ManaTrait (Bronze) + TFT17_VexUniqueTrait (Gold) + TFT17_ResistTank (Bronze)",
-      "play_count": 357,
-      "avg_placement": 4.46,
-      "top4_rate": 50.4,
-      "avg_top4_prob": 50.4,
-      "tier": "B",
-      "key_traits": [
-        "TFT17_SpaceGroove|1",
-        "TFT17_BlitzcrankUniqueTrait|3",
-        "TFT17_ShieldTank|1",
-        "TFT17_ManaTrait|1",
-        "TFT17_VexUniqueTrait|3",
-        "TFT17_ResistTank|1"
+      ],
+      "key_units": [
+        "TFT17_Rhaast",
+        "TFT17_Pantheon",
+        "TFT17_Milio",
+        "TFT17_Jax",
+        "TFT17_Maokai",
+        "TFT17_Lulu",
+        "TFT17_Aatrox",
+        "TFT17_TwistedFate"
       ]
     },
     {
       "cluster_id": 20,
-      "comp_label": "TFT17_ResistTank (Silver) + TFT17_Fateweaver (Bronze) + TFT17_ShenUniqueTrait (Gold) + TFT17_DRX (Bronze) + TFT17_SpaceGroove (Bronze) + TFT17_AssassinTrait (Bronze)",
-      "play_count": 227,
-      "avg_placement": 4.55,
-      "top4_rate": 48.5,
-      "avg_top4_prob": 48.6,
-      "tier": "B",
+      "comp_label": "TFT17_ShieldTank (Bronze) + TFT17_APTrait (Bronze) + TFT17_ShenUniqueTrait (Gold) + TFT17_ResistTank (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_AssassinTrait (Bronze)",
+      "play_count": 1658,
+      "avg_placement": 3.33,
+      "top4_rate": 73.2,
+      "avg_top4_prob": 70.0,
+      "tier": "S",
       "key_traits": [
-        "TFT17_ResistTank|2",
-        "TFT17_Fateweaver|1",
+        "TFT17_ShieldTank|1",
+        "TFT17_APTrait|1",
         "TFT17_ShenUniqueTrait|3",
-        "TFT17_DRX|1",
-        "TFT17_SpaceGroove|1",
-        "TFT17_AssassinTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 8,
-      "comp_label": "TFT17_ResistTank (Bronze) + TFT17_Fateweaver (Bronze) + TFT17_Timebreaker (Bronze) + TFT17_AssassinTrait (Bronze) + TFT17_Astronaut (Silver) + TFT17_FlexTrait (Bronze)",
-      "play_count": 487,
-      "avg_placement": 4.54,
-      "top4_rate": 48.3,
-      "avg_top4_prob": 48.1,
-      "tier": "B",
-      "key_traits": [
         "TFT17_ResistTank|1",
-        "TFT17_Fateweaver|1",
-        "TFT17_Timebreaker|1",
-        "TFT17_AssassinTrait|1",
-        "TFT17_Astronaut|2",
-        "TFT17_FlexTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 0,
-      "comp_label": "TFT17_MeleeTrait (Bronze) + TFT17_FioraUniqueTrait (Gold) + TFT17_Mecha (Prismatic) + TFT17_ManaTrait (Bronze) + TFT17_FlexTrait (Bronze) + TFT17_MorganaUniqueTrait (Gold)",
-      "play_count": 178,
-      "avg_placement": 4.7,
-      "top4_rate": 47.8,
-      "avg_top4_prob": 47.3,
-      "tier": "B",
-      "key_traits": [
-        "TFT17_MeleeTrait|1",
-        "TFT17_FioraUniqueTrait|3",
-        "TFT17_Mecha|4",
-        "TFT17_ManaTrait|1",
-        "TFT17_FlexTrait|1",
-        "TFT17_MorganaUniqueTrait|3"
-      ]
-    },
-    {
-      "cluster_id": 27,
-      "comp_label": "TFT17_Fateweaver (Prismatic) + TFT17_DRX (Bronze) + TFT17_ResistTank (Silver) + TFT17_Astronaut (Bronze) + TFT17_ResistTank (Bronze)",
-      "play_count": 183,
-      "avg_placement": 4.56,
-      "top4_rate": 47.5,
-      "avg_top4_prob": 45.9,
-      "tier": "B",
-      "key_traits": [
-        "TFT17_Fateweaver|4",
-        "TFT17_DRX|1",
-        "TFT17_ResistTank|2",
-        "TFT17_Astronaut|1",
-        "TFT17_ResistTank|1"
+        "TFT17_BlitzcrankUniqueTrait|3",
+        "TFT17_AssassinTrait|1"
+      ],
+      "key_units": [
+        "TFT17_Pantheon",
+        "TFT17_Nami",
+        "TFT17_Ornn",
+        "TFT17_Riven",
+        "TFT17_Gwen",
+        "TFT17_Shen",
+        "TFT17_Blitzcrank",
+        "TFT17_TahmKench"
       ]
     },
     {
       "cluster_id": 19,
-      "comp_label": "TFT17_JhinUniqueTrait (Gold) + TFT17_HPTank (Bronze) + TFT17_DarkStar (Prismatic) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_ShieldTank (Bronze) + TFT17_RangedTrait (Bronze)",
-      "play_count": 190,
-      "avg_placement": 4.68,
-      "top4_rate": 46.3,
-      "avg_top4_prob": 46.4,
-      "tier": "B",
+      "comp_label": "TFT17_MissFortuneUniqueTrait (Gold) + TFT17_DRX (Bronze) + TFT17_ManaTrait (Silver) + TFT17_HPTank (Bronze) + TFT17_SpaceGroove (Bronze) + TFT17_ResistTank (Bronze)",
+      "play_count": 627,
+      "avg_placement": 3.63,
+      "top4_rate": 69.1,
+      "avg_top4_prob": 63.9,
+      "tier": "S",
       "key_traits": [
-        "TFT17_JhinUniqueTrait|3",
+        "TFT17_MissFortuneUniqueTrait|3",
+        "TFT17_DRX|1",
+        "TFT17_ManaTrait|2",
         "TFT17_HPTank|1",
-        "TFT17_DarkStar|4",
-        "TFT17_TahmKenchUniqueTrait|3",
+        "TFT17_SpaceGroove|1",
+        "TFT17_ResistTank|1"
+      ],
+      "key_units": [
+        "TFT17_Maokai",
+        "TFT17_MissFortune",
+        "TFT17_Viktor",
+        "TFT17_Aatrox",
+        "TFT17_Gragas",
+        "TFT17_Ornn",
+        "TFT17_Rhaast",
+        "TFT17_Morgana"
+      ]
+    },
+    {
+      "cluster_id": 8,
+      "comp_label": "TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_ShieldTank (Bronze) + TFT17_MorganaUniqueTrait (Gold) + TFT17_DarkStar (Bronze) + TFT17_ManaTrait (Silver)",
+      "play_count": 728,
+      "avg_placement": 3.59,
+      "top4_rate": 68.0,
+      "avg_top4_prob": 67.4,
+      "tier": "S",
+      "key_traits": [
+        "TFT17_SpaceGroove|1",
+        "TFT17_BlitzcrankUniqueTrait|3",
         "TFT17_ShieldTank|1",
-        "TFT17_RangedTrait|1"
+        "TFT17_MorganaUniqueTrait|3",
+        "TFT17_DarkStar|1",
+        "TFT17_ManaTrait|2"
+      ],
+      "key_units": [
+        "TFT17_Blitzcrank",
+        "TFT17_AurelionSol",
+        "TFT17_Karma",
+        "TFT17_Mordekaiser",
+        "TFT17_Galio",
+        "TFT17_Morgana",
+        "TFT17_Rhaast",
+        "TFT17_Bard"
       ]
     },
     {
       "cluster_id": 22,
-      "comp_label": "TFT17_ResistTank (Bronze) + TFT17_DRX (Bronze) + TFT17_Fateweaver (Bronze) + TFT17_AssassinTrait (Bronze) + TFT17_SpaceGroove (Bronze) + TFT17_RhaastUniqueTrait (Gold)",
-      "play_count": 498,
-      "avg_placement": 4.84,
-      "top4_rate": 46.2,
-      "avg_top4_prob": 50.0,
+      "comp_label": "TFT17_JhinUniqueTrait (Gold) + TFT17_Timebreaker (Prismatic) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_DarkStar (Bronze) + TFT17_HPTank (Silver) + TFT17_RangedTrait (Silver)",
+      "play_count": 789,
+      "avg_placement": 3.67,
+      "top4_rate": 65.4,
+      "avg_top4_prob": 64.2,
+      "tier": "S",
+      "key_traits": [
+        "TFT17_JhinUniqueTrait|3",
+        "TFT17_Timebreaker|4",
+        "TFT17_TahmKenchUniqueTrait|3",
+        "TFT17_DarkStar|1",
+        "TFT17_HPTank|2",
+        "TFT17_RangedTrait|2"
+      ],
+      "key_units": [
+        "TFT17_Pantheon",
+        "TFT17_Ezreal",
+        "TFT17_Jhin",
+        "TFT17_Gnar",
+        "TFT17_Chogath",
+        "TFT17_TahmKench",
+        "TFT17_Shen",
+        "TFT17_Milio"
+      ]
+    },
+    {
+      "cluster_id": 32,
+      "comp_label": "TFT17_ShieldTank (Bronze) + TFT17_JhinUniqueTrait (Gold) + TFT17_DarkStar (Bronze) + TFT17_ResistTank (Bronze) + TFT17_RangedTrait (Bronze) + TFT17_MorganaUniqueTrait (Gold)",
+      "play_count": 679,
+      "avg_placement": 3.82,
+      "top4_rate": 62.0,
+      "avg_top4_prob": 63.2,
+      "tier": "A",
+      "key_traits": [
+        "TFT17_ShieldTank|1",
+        "TFT17_JhinUniqueTrait|3",
+        "TFT17_DarkStar|1",
+        "TFT17_ResistTank|1",
+        "TFT17_RangedTrait|1",
+        "TFT17_MorganaUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Nunu",
+        "TFT17_Xayah",
+        "TFT17_Jhin",
+        "TFT17_Mordekaiser",
+        "TFT17_Jax",
+        "TFT17_Morgana",
+        "TFT17_Riven",
+        "TFT17_Shen"
+      ]
+    },
+    {
+      "cluster_id": 47,
+      "comp_label": "TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_ResistTank (Bronze) + TFT17_ShieldTank (Bronze) + TFT17_DRX (Bronze) + TFT17_Fateweaver (Bronze)",
+      "play_count": 591,
+      "avg_placement": 3.84,
+      "top4_rate": 61.8,
+      "avg_top4_prob": 62.8,
+      "tier": "A",
+      "key_traits": [
+        "TFT17_SpaceGroove|1",
+        "TFT17_BlitzcrankUniqueTrait|3",
+        "TFT17_ResistTank|1",
+        "TFT17_ShieldTank|1",
+        "TFT17_DRX|1",
+        "TFT17_Fateweaver|1"
+      ],
+      "key_units": [
+        "TFT17_Blitzcrank",
+        "TFT17_Aatrox",
+        "TFT17_Milio",
+        "TFT17_Shen",
+        "TFT17_Nunu",
+        "TFT17_Caitlyn",
+        "TFT17_Zed",
+        "TFT17_Graves"
+      ]
+    },
+    {
+      "cluster_id": 39,
+      "comp_label": "TFT17_ShieldTank (Silver) + TFT17_ManaTrait (Silver) + TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_DarkStar (Bronze) + TFT17_MorganaUniqueTrait (Gold)",
+      "play_count": 653,
+      "avg_placement": 3.92,
+      "top4_rate": 60.9,
+      "avg_top4_prob": 60.9,
+      "tier": "A",
+      "key_traits": [
+        "TFT17_ShieldTank|2",
+        "TFT17_ManaTrait|2",
+        "TFT17_SpaceGroove|1",
+        "TFT17_BlitzcrankUniqueTrait|3",
+        "TFT17_DarkStar|1",
+        "TFT17_MorganaUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Mordekaiser",
+        "TFT17_Illaoi",
+        "TFT17_Blitzcrank",
+        "TFT17_Nunu",
+        "TFT17_Morgana",
+        "TFT17_Karma",
+        "TFT17_IvernMinion",
+        "TFT17_Summon"
+      ]
+    },
+    {
+      "cluster_id": 35,
+      "comp_label": "TFT17_APTrait (Bronze) + TFT17_ShenUniqueTrait (Gold) + TFT17_ResistTank (Bronze) + TFT17_Timebreaker (Bronze) + TFT17_HPTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold)",
+      "play_count": 887,
+      "avg_placement": 4.03,
+      "top4_rate": 58.7,
+      "avg_top4_prob": 58.7,
+      "tier": "A",
+      "key_traits": [
+        "TFT17_APTrait|1",
+        "TFT17_ShenUniqueTrait|3",
+        "TFT17_ResistTank|1",
+        "TFT17_Timebreaker|1",
+        "TFT17_HPTank|1",
+        "TFT17_TahmKenchUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Nami",
+        "TFT17_Ornn",
+        "TFT17_Pantheon",
+        "TFT17_Shen",
+        "TFT17_TahmKench",
+        "TFT17_Blitzcrank",
+        "TFT17_Nasus",
+        "TFT17_Gwen"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "comp_label": "TFT17_SpaceGroove (Bronze) + TFT17_ShieldTank (Bronze) + TFT17_HPTank (Bronze) + TFT17_ResistTank (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_TahmKenchUniqueTrait (Gold)",
+      "play_count": 652,
+      "avg_placement": 4.03,
+      "top4_rate": 58.3,
+      "avg_top4_prob": 57.0,
+      "tier": "A",
+      "key_traits": [
+        "TFT17_SpaceGroove|1",
+        "TFT17_ShieldTank|1",
+        "TFT17_HPTank|1",
+        "TFT17_ResistTank|1",
+        "TFT17_BlitzcrankUniqueTrait|3",
+        "TFT17_TahmKenchUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Nunu",
+        "TFT17_Xayah",
+        "TFT17_Blitzcrank",
+        "TFT17_TahmKench",
+        "TFT17_Maokai",
+        "TFT17_Aatrox",
+        "TFT17_Jax",
+        "TFT17_Jhin"
+      ]
+    },
+    {
+      "cluster_id": 24,
+      "comp_label": "TFT17_FioraUniqueTrait (Gold) + TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_MeleeTrait (Bronze) + TFT17_DRX (Bronze) + TFT17_ShieldTank (Bronze)",
+      "play_count": 523,
+      "avg_placement": 4.0,
+      "top4_rate": 58.3,
+      "avg_top4_prob": 61.4,
+      "tier": "A",
+      "key_traits": [
+        "TFT17_FioraUniqueTrait|3",
+        "TFT17_SpaceGroove|1",
+        "TFT17_BlitzcrankUniqueTrait|3",
+        "TFT17_MeleeTrait|1",
+        "TFT17_DRX|1",
+        "TFT17_ShieldTank|1"
+      ],
+      "key_units": [
+        "TFT17_Fiora",
+        "TFT17_Blitzcrank",
+        "TFT17_Akali",
+        "TFT17_Aatrox",
+        "TFT17_Shen",
+        "TFT17_Nunu",
+        "TFT17_Morgana",
+        "TFT17_Zed"
+      ]
+    },
+    {
+      "cluster_id": 25,
+      "comp_label": "TFT17_ManaTrait (Silver) + TFT17_MorganaUniqueTrait (Gold) + TFT17_DarkStar (Prismatic) + TFT17_JhinUniqueTrait (Gold) + TFT17_HPTank (Bronze) + TFT17_FlexTrait (Bronze)",
+      "play_count": 335,
+      "avg_placement": 4.1,
+      "top4_rate": 57.6,
+      "avg_top4_prob": 58.8,
+      "tier": "A",
+      "key_traits": [
+        "TFT17_ManaTrait|2",
+        "TFT17_MorganaUniqueTrait|3",
+        "TFT17_DarkStar|4",
+        "TFT17_JhinUniqueTrait|3",
+        "TFT17_HPTank|1",
+        "TFT17_FlexTrait|1"
+      ],
+      "key_units": [
+        "TFT17_Mordekaiser",
+        "TFT17_Karma",
+        "TFT17_Morgana",
+        "TFT17_Chogath",
+        "TFT17_Jhin",
+        "TFT17_Kaisa",
+        "TFT17_Galio",
+        "TFT17_AurelionSol"
+      ]
+    },
+    {
+      "cluster_id": 16,
+      "comp_label": "TFT17_DRX (Bronze) + TFT17_Fateweaver (Prismatic) + TFT17_ResistTank (Silver) + TFT17_Astronaut (Bronze) + TFT17_ShenUniqueTrait (Gold) + TFT17_Timebreaker (Bronze)",
+      "play_count": 1108,
+      "avg_placement": 4.23,
+      "top4_rate": 56.9,
+      "avg_top4_prob": 55.6,
+      "tier": "A",
+      "key_traits": [
+        "TFT17_DRX|1",
+        "TFT17_Fateweaver|4",
+        "TFT17_ResistTank|2",
+        "TFT17_Astronaut|1",
+        "TFT17_ShenUniqueTrait|3",
+        "TFT17_Timebreaker|1"
+      ],
+      "key_units": [
+        "TFT17_Milio",
+        "TFT17_Aatrox",
+        "TFT17_TwistedFate",
+        "TFT17_Caitlyn",
+        "TFT17_Corki",
+        "TFT17_Rammus",
+        "TFT17_Poppy",
+        "TFT17_Shen"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "comp_label": "TFT17_ShieldTank (Silver) + TFT17_ADMIN (Bronze) + TFT17_MorganaUniqueTrait (Gold) + TFT17_ManaTrait (Prismatic) + TFT17_SpaceGroove (Bronze) + TFT17_ManaTrait (Silver)",
+      "play_count": 1627,
+      "avg_placement": 4.17,
+      "top4_rate": 56.7,
+      "avg_top4_prob": 56.2,
+      "tier": "A",
+      "key_traits": [
+        "TFT17_ShieldTank|2",
+        "TFT17_ADMIN|1",
+        "TFT17_MorganaUniqueTrait|3",
+        "TFT17_ManaTrait|4",
+        "TFT17_SpaceGroove|1",
+        "TFT17_ManaTrait|2"
+      ],
+      "key_units": [
+        "TFT17_Mordekaiser",
+        "TFT17_Zoe",
+        "TFT17_Leona",
+        "TFT17_Illaoi",
+        "TFT17_Viktor",
+        "TFT17_Nunu",
+        "TFT17_Morgana",
+        "TFT17_AurelionSol"
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "comp_label": "TFT17_Fateweaver (Prismatic) + TFT17_DRX (Bronze) + TFT17_ResistTank (Bronze) + TFT17_Timebreaker (Bronze) + TFT17_AssassinTrait (Bronze) + TFT17_Stargazer_Medallion (Prismatic)",
+      "play_count": 861,
+      "avg_placement": 4.22,
+      "top4_rate": 55.6,
+      "avg_top4_prob": 53.5,
+      "tier": "A",
+      "key_traits": [
+        "TFT17_Fateweaver|4",
+        "TFT17_DRX|1",
+        "TFT17_ResistTank|1",
+        "TFT17_Timebreaker|1",
+        "TFT17_AssassinTrait|1",
+        "TFT17_Stargazer_Medallion|4"
+      ],
+      "key_units": [
+        "TFT17_Milio",
+        "TFT17_Caitlyn",
+        "TFT17_TwistedFate",
+        "TFT17_Corki",
+        "TFT17_Aatrox",
+        "TFT17_Jax",
+        "TFT17_Talon",
+        "TFT17_Riven"
+      ]
+    },
+    {
+      "cluster_id": 42,
+      "comp_label": "TFT17_FlexTrait (Bronze) + TFT17_HPTank (Bronze) + TFT17_MeleeTrait (Bronze) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_ManaTrait (Bronze) + TFT17_FioraUniqueTrait (Gold)",
+      "play_count": 563,
+      "avg_placement": 4.14,
+      "top4_rate": 55.2,
+      "avg_top4_prob": 52.3,
+      "tier": "A",
+      "key_traits": [
+        "TFT17_FlexTrait|1",
+        "TFT17_HPTank|1",
+        "TFT17_MeleeTrait|1",
+        "TFT17_TahmKenchUniqueTrait|3",
+        "TFT17_ManaTrait|1",
+        "TFT17_FioraUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Urgot",
+        "TFT17_Galio",
+        "TFT17_AurelionSol",
+        "TFT17_TahmKench",
+        "TFT17_Karma",
+        "TFT17_Fiora",
+        "TFT17_Morgana",
+        "TFT17_Mordekaiser"
+      ]
+    },
+    {
+      "cluster_id": 11,
+      "comp_label": "TFT17_DRX (Prismatic) + TFT17_HPTank (Bronze) + TFT17_MeleeTrait (Bronze) + TFT17_ResistTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_MorganaUniqueTrait (Gold)",
+      "play_count": 1146,
+      "avg_placement": 4.35,
+      "top4_rate": 54.5,
+      "avg_top4_prob": 54.3,
       "tier": "B",
+      "key_traits": [
+        "TFT17_DRX|4",
+        "TFT17_HPTank|1",
+        "TFT17_MeleeTrait|1",
+        "TFT17_ResistTank|1",
+        "TFT17_TahmKenchUniqueTrait|3",
+        "TFT17_MorganaUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Akali",
+        "TFT17_Maokai",
+        "TFT17_Aatrox",
+        "TFT17_Kindred",
+        "TFT17_Caitlyn",
+        "TFT17_TahmKench",
+        "TFT17_Morgana",
+        "TFT17_Fiora"
+      ]
+    },
+    {
+      "cluster_id": 46,
+      "comp_label": "TFT17_DRX (Prismatic) + TFT17_Fateweaver (Bronze) + TFT17_HPTank (Bronze) + TFT17_ResistTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_ShenUniqueTrait (Gold)",
+      "play_count": 807,
+      "avg_placement": 4.29,
+      "top4_rate": 54.2,
+      "avg_top4_prob": 50.6,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_DRX|4",
+        "TFT17_Fateweaver|1",
+        "TFT17_HPTank|1",
+        "TFT17_ResistTank|1",
+        "TFT17_TahmKenchUniqueTrait|3",
+        "TFT17_ShenUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Aatrox",
+        "TFT17_Maokai",
+        "TFT17_Milio",
+        "TFT17_Caitlyn",
+        "TFT17_Akali",
+        "TFT17_TahmKench",
+        "TFT17_Kindred",
+        "TFT17_Shen"
+      ]
+    },
+    {
+      "cluster_id": 33,
+      "comp_label": "TFT16_Blacksmith (Gold) + TFT16_Brawler (Bronze) + TFT16_Warden (Bronze) + TFT16_Chronokeeper (Gold) + TFT16_Gunslinger (Bronze) + TFT16_KindredUnique (Gold)",
+      "play_count": 797,
+      "avg_placement": 4.26,
+      "top4_rate": 54.0,
+      "avg_top4_prob": 51.9,
+      "tier": "B",
+      "key_traits": [
+        "TFT16_Blacksmith|3",
+        "TFT16_Brawler|1",
+        "TFT16_Warden|1",
+        "TFT16_Chronokeeper|3",
+        "TFT16_Gunslinger|1",
+        "TFT16_KindredUnique|3"
+      ],
+      "key_units": [
+        "TFT16_Ornn",
+        "TFT16_Braum",
+        "TFT16_Volibear",
+        "TFT16_Zilean",
+        "TFT16_Kindred",
+        "TFT16_Nautilus",
+        "TFT16_Lissandra",
+        "TFT16_Lucian"
+      ]
+    },
+    {
+      "cluster_id": 15,
+      "comp_label": "TFT16_Defender (Bronze) + TFT16_Sorcerer (Bronze) + TFT16_Juggernaut (Bronze) + TFT16_ShyvanaUnique (Gold) + TFT16_Targon (Prismatic) + TFT16_SylasTrait (Gold)",
+      "play_count": 708,
+      "avg_placement": 4.32,
+      "top4_rate": 52.8,
+      "avg_top4_prob": 49.9,
+      "tier": "B",
+      "key_traits": [
+        "TFT16_Defender|1",
+        "TFT16_Sorcerer|1",
+        "TFT16_Juggernaut|1",
+        "TFT16_ShyvanaUnique|3",
+        "TFT16_Targon|4",
+        "TFT16_SylasTrait|3"
+      ],
+      "key_units": [
+        "TFT16_Swain",
+        "TFT16_Shyvana",
+        "TFT16_Sylas",
+        "TFT16_Taric",
+        "TFT16_Kennen",
+        "TFT16_Azir",
+        "TFT16_Neeko",
+        "TFT16_Poppy"
+      ]
+    },
+    {
+      "cluster_id": 18,
+      "comp_label": "TFT17_FlexTrait (Silver) + TFT17_ShieldTank (Bronze) + TFT17_DarkStar (Bronze) + TFT17_MorganaUniqueTrait (Gold) + TFT17_SonaUniqueTrait (Gold) + TFT17_SpaceGroove (Bronze)",
+      "play_count": 739,
+      "avg_placement": 4.41,
+      "top4_rate": 52.8,
+      "avg_top4_prob": 50.9,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_FlexTrait|2",
+        "TFT17_ShieldTank|1",
+        "TFT17_DarkStar|1",
+        "TFT17_MorganaUniqueTrait|3",
+        "TFT17_SonaUniqueTrait|3",
+        "TFT17_SpaceGroove|1"
+      ],
+      "key_units": [
+        "TFT17_Karma",
+        "TFT17_IvernMinion",
+        "TFT17_Illaoi",
+        "TFT17_Summon",
+        "TFT17_Morgana",
+        "TFT17_Galio",
+        "TFT17_Sona",
+        "TFT17_Lissandra"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "comp_label": "TFT17_APTrait (Bronze) + TFT17_DarkStar (Bronze) + TFT17_ResistTank (Bronze) + TFT17_SummonTrait (Bronze) + TFT17_Astronaut (Silver) + TFT17_FlexTrait (Bronze)",
+      "play_count": 424,
+      "avg_placement": 4.37,
+      "top4_rate": 51.2,
+      "avg_top4_prob": 46.4,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_APTrait|1",
+        "TFT17_DarkStar|1",
+        "TFT17_ResistTank|1",
+        "TFT17_SummonTrait|1",
+        "TFT17_Astronaut|2",
+        "TFT17_FlexTrait|1"
+      ],
+      "key_units": [
+        "TFT17_IvernMinion",
+        "TFT17_Lissandra",
+        "TFT17_Rammus",
+        "TFT17_Summon",
+        "TFT17_Veigar",
+        "TFT17_Poppy",
+        "TFT17_Bard",
+        "TFT17_Karma"
+      ]
+    },
+    {
+      "cluster_id": 36,
+      "comp_label": "TFT17_FioraUniqueTrait (Gold) + TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_MeleeTrait (Bronze) + TFT17_DRX (Bronze) + TFT17_ShieldTank (Bronze)",
+      "play_count": 1707,
+      "avg_placement": 4.38,
+      "top4_rate": 50.7,
+      "avg_top4_prob": 52.0,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_FioraUniqueTrait|3",
+        "TFT17_SpaceGroove|1",
+        "TFT17_BlitzcrankUniqueTrait|3",
+        "TFT17_MeleeTrait|1",
+        "TFT17_DRX|1",
+        "TFT17_ShieldTank|1"
+      ],
+      "key_units": [
+        "TFT17_Fiora",
+        "TFT17_Blitzcrank",
+        "TFT17_Akali",
+        "TFT17_Vex",
+        "TFT17_Nunu",
+        "TFT17_Aatrox",
+        "TFT17_Graves",
+        "TFT17_Shen"
+      ]
+    },
+    {
+      "cluster_id": 49,
+      "comp_label": "TFT17_ShieldTank (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_ResistTank (Bronze) + TFT17_SpaceGroove (Silver) + TFT17_ShenUniqueTrait (Gold) + TFT17_RangedTrait (Bronze)",
+      "play_count": 608,
+      "avg_placement": 4.42,
+      "top4_rate": 50.3,
+      "avg_top4_prob": 48.7,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_ShieldTank|1",
+        "TFT17_BlitzcrankUniqueTrait|3",
+        "TFT17_ResistTank|1",
+        "TFT17_SpaceGroove|2",
+        "TFT17_ShenUniqueTrait|3",
+        "TFT17_RangedTrait|1"
+      ],
+      "key_units": [
+        "TFT17_Ornn",
+        "TFT17_Nami",
+        "TFT17_Blitzcrank",
+        "TFT17_Nasus",
+        "TFT17_Samira",
+        "TFT17_Gwen",
+        "TFT17_Shen",
+        "TFT17_Nunu"
+      ]
+    },
+    {
+      "cluster_id": 21,
+      "comp_label": "TFT17_ASTrait (Bronze) + TFT17_DRX (Prismatic) + TFT17_MeleeTrait (Bronze) + TFT17_HPTank (Bronze) + TFT17_ResistTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold)",
+      "play_count": 1526,
+      "avg_placement": 4.54,
+      "top4_rate": 50.1,
+      "avg_top4_prob": 49.9,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_ASTrait|1",
+        "TFT17_DRX|4",
+        "TFT17_MeleeTrait|1",
+        "TFT17_HPTank|1",
+        "TFT17_ResistTank|1",
+        "TFT17_TahmKenchUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Kindred",
+        "TFT17_Akali",
+        "TFT17_Aatrox",
+        "TFT17_Maokai",
+        "TFT17_Belveth",
+        "TFT17_TahmKench",
+        "TFT17_Caitlyn",
+        "TFT17_Morgana"
+      ]
+    },
+    {
+      "cluster_id": 17,
+      "comp_label": "TFT17_HPTank (Bronze) + TFT17_ResistTank (Bronze) + TFT17_ShenUniqueTrait (Gold) + TFT17_DRX (Bronze) + TFT17_Fateweaver (Bronze) + TFT17_TahmKenchUniqueTrait (Gold)",
+      "play_count": 964,
+      "avg_placement": 4.35,
+      "top4_rate": 49.8,
+      "avg_top4_prob": 51.6,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_HPTank|1",
+        "TFT17_ResistTank|1",
+        "TFT17_ShenUniqueTrait|3",
+        "TFT17_DRX|1",
+        "TFT17_Fateweaver|1",
+        "TFT17_TahmKenchUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Milio",
+        "TFT17_Shen",
+        "TFT17_Aatrox",
+        "TFT17_TahmKench",
+        "TFT17_Caitlyn",
+        "TFT17_Zed",
+        "TFT17_Pantheon",
+        "TFT17_Graves"
+      ]
+    },
+    {
+      "cluster_id": 9,
+      "comp_label": "TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_ShenUniqueTrait (Gold) + TFT17_ShieldTank (Bronze) + TFT17_ResistTank (Bronze) + TFT17_VexUniqueTrait (Gold)",
+      "play_count": 689,
+      "avg_placement": 4.53,
+      "top4_rate": 49.5,
+      "avg_top4_prob": 52.2,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_SpaceGroove|1",
+        "TFT17_BlitzcrankUniqueTrait|3",
+        "TFT17_ShenUniqueTrait|3",
+        "TFT17_ShieldTank|1",
+        "TFT17_ResistTank|1",
+        "TFT17_VexUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Blitzcrank",
+        "TFT17_Shen",
+        "TFT17_Nunu",
+        "TFT17_Vex",
+        "TFT17_Aatrox",
+        "TFT17_Graves",
+        "TFT17_Morgana",
+        "TFT17_Jax"
+      ]
+    },
+    {
+      "cluster_id": 37,
+      "comp_label": "TFT17_DarkStar (Prismatic) + TFT17_JhinUniqueTrait (Gold) + TFT17_HPTank (Bronze) + TFT17_ShieldTank (Bronze) + TFT17_ManaTrait (Bronze) + TFT17_FlexTrait (Bronze)",
+      "play_count": 557,
+      "avg_placement": 4.6,
+      "top4_rate": 48.5,
+      "avg_top4_prob": 50.5,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_DarkStar|4",
+        "TFT17_JhinUniqueTrait|3",
+        "TFT17_HPTank|1",
+        "TFT17_ShieldTank|1",
+        "TFT17_ManaTrait|1",
+        "TFT17_FlexTrait|1"
+      ],
+      "key_units": [
+        "TFT17_Mordekaiser",
+        "TFT17_Karma",
+        "TFT17_Chogath",
+        "TFT17_Jhin",
+        "TFT17_Kaisa",
+        "TFT17_TahmKench",
+        "TFT17_Lissandra",
+        "TFT17_Galio"
+      ]
+    },
+    {
+      "cluster_id": 30,
+      "comp_label": "TFT17_FlexTrait (Bronze) + TFT17_ShieldTank (Bronze) + TFT17_MorganaUniqueTrait (Gold) + TFT17_DarkStar (Bronze) + TFT17_ManaTrait (Prismatic) + TFT17_ManaTrait (Silver)",
+      "play_count": 837,
+      "avg_placement": 4.6,
+      "top4_rate": 47.7,
+      "avg_top4_prob": 51.1,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_FlexTrait|1",
+        "TFT17_ShieldTank|1",
+        "TFT17_MorganaUniqueTrait|3",
+        "TFT17_DarkStar|1",
+        "TFT17_ManaTrait|4",
+        "TFT17_ManaTrait|2"
+      ],
+      "key_units": [
+        "TFT17_Mordekaiser",
+        "TFT17_Morgana",
+        "TFT17_Karma",
+        "TFT17_AurelionSol",
+        "TFT17_Viktor",
+        "TFT17_Galio",
+        "TFT17_Bard",
+        "TFT17_Nunu"
+      ]
+    },
+    {
+      "cluster_id": 45,
+      "comp_label": "TFT17_MorganaUniqueTrait (Gold) + TFT17_DarkStar (Bronze) + TFT17_ManaTrait (Silver) + TFT17_Mecha (Silver) + TFT17_FlexTrait (Bronze) + TFT17_ShieldTank (Bronze)",
+      "play_count": 634,
+      "avg_placement": 4.61,
+      "top4_rate": 47.6,
+      "avg_top4_prob": 51.6,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_MorganaUniqueTrait|3",
+        "TFT17_DarkStar|1",
+        "TFT17_ManaTrait|2",
+        "TFT17_Mecha|2",
+        "TFT17_FlexTrait|1",
+        "TFT17_ShieldTank|1"
+      ],
+      "key_units": [
+        "TFT17_AurelionSol",
+        "TFT17_Galio",
+        "TFT17_Karma",
+        "TFT17_Morgana",
+        "TFT17_Mordekaiser",
+        "TFT17_Nunu",
+        "TFT17_Rhaast",
+        "TFT17_Bard"
+      ]
+    },
+    {
+      "cluster_id": 12,
+      "comp_label": "TFT17_MeleeTrait (Bronze) + TFT17_DRX (Bronze) + TFT17_HPTank (Bronze) + TFT17_Primordian (Prismatic) + TFT17_RhaastUniqueTrait (Gold) + TFT17_ASTrait (Silver)",
+      "play_count": 1113,
+      "avg_placement": 4.66,
+      "top4_rate": 47.2,
+      "avg_top4_prob": 48.1,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_MeleeTrait|1",
+        "TFT17_DRX|1",
+        "TFT17_HPTank|1",
+        "TFT17_Primordian|4",
+        "TFT17_RhaastUniqueTrait|3",
+        "TFT17_ASTrait|2"
+      ],
+      "key_units": [
+        "TFT17_Akali",
+        "TFT17_Maokai",
+        "TFT17_Belveth",
+        "TFT17_RekSai",
+        "TFT17_Jinx",
+        "TFT17_Kindred",
+        "TFT17_Briar",
+        "TFT17_Rhaast"
+      ]
+    },
+    {
+      "cluster_id": 28,
+      "comp_label": "TFT17_TahmKenchUniqueTrait (Gold) + TFT17_DRX (Bronze) + TFT17_PsyOps (Bronze) + TFT17_HPTank (Silver) + TFT17_MeleeTrait (Silver) + TFT17_ASTrait (Bronze)",
+      "play_count": 911,
+      "avg_placement": 4.71,
+      "top4_rate": 47.0,
+      "avg_top4_prob": 46.2,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_TahmKenchUniqueTrait|3",
+        "TFT17_DRX|1",
+        "TFT17_PsyOps|1",
+        "TFT17_HPTank|2",
+        "TFT17_MeleeTrait|2",
+        "TFT17_ASTrait|1"
+      ],
+      "key_units": [
+        "TFT17_Urgot",
+        "TFT17_Maokai",
+        "TFT17_TahmKench",
+        "TFT17_MasterYi",
+        "TFT17_Belveth",
+        "TFT17_Kindred",
+        "TFT17_Gragas",
+        "TFT17_Fiora"
+      ]
+    },
+    {
+      "cluster_id": 48,
+      "comp_label": "TFT17_Fateweaver (Bronze) + TFT17_HPTank (Bronze) + TFT17_ShenUniqueTrait (Gold) + TFT17_ResistTank (Silver) + TFT17_DRX (Bronze) + TFT17_Timebreaker (Prismatic)",
+      "play_count": 641,
+      "avg_placement": 4.71,
+      "top4_rate": 45.9,
+      "avg_top4_prob": 47.9,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_Fateweaver|1",
+        "TFT17_HPTank|1",
+        "TFT17_ShenUniqueTrait|3",
+        "TFT17_ResistTank|2",
+        "TFT17_DRX|1",
+        "TFT17_Timebreaker|4"
+      ],
+      "key_units": [
+        "TFT17_Milio",
+        "TFT17_Pantheon",
+        "TFT17_Shen",
+        "TFT17_Rammus",
+        "TFT17_Riven",
+        "TFT17_Aatrox",
+        "TFT17_Corki",
+        "TFT17_Caitlyn"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "comp_label": "TFT17_APTrait (Bronze) + TFT17_SpaceGroove (Silver) + TFT17_ShenUniqueTrait (Gold) + TFT17_ResistTank (Bronze) + TFT17_AssassinTrait (Bronze) + TFT17_HPTank (Bronze)",
+      "play_count": 668,
+      "avg_placement": 4.84,
+      "top4_rate": 45.5,
+      "avg_top4_prob": 47.7,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_APTrait|1",
+        "TFT17_SpaceGroove|2",
+        "TFT17_ShenUniqueTrait|3",
+        "TFT17_ResistTank|1",
+        "TFT17_AssassinTrait|1",
+        "TFT17_HPTank|1"
+      ],
+      "key_units": [
+        "TFT17_Pantheon",
+        "TFT17_Nami",
+        "TFT17_Riven",
+        "TFT17_Ornn",
+        "TFT17_Gwen",
+        "TFT17_Shen",
+        "TFT17_TahmKench",
+        "TFT17_Blitzcrank"
+      ]
+    },
+    {
+      "cluster_id": 34,
+      "comp_label": "TFT17_Fateweaver (Bronze) + TFT17_ResistTank (Bronze) + TFT17_Astronaut (Silver) + TFT17_AssassinTrait (Bronze) + TFT17_FlexTrait (Bronze) + TFT17_Timebreaker (Bronze)",
+      "play_count": 1049,
+      "avg_placement": 4.74,
+      "top4_rate": 45.4,
+      "avg_top4_prob": 45.8,
+      "tier": "B",
+      "key_traits": [
+        "TFT17_Fateweaver|1",
+        "TFT17_ResistTank|1",
+        "TFT17_Astronaut|2",
+        "TFT17_AssassinTrait|1",
+        "TFT17_FlexTrait|1",
+        "TFT17_Timebreaker|1"
+      ],
+      "key_units": [
+        "TFT17_Corki",
+        "TFT17_Rammus",
+        "TFT17_Milio",
+        "TFT17_Fizz",
+        "TFT17_Riven",
+        "TFT17_IvernMinion",
+        "TFT17_Poppy",
+        "TFT17_Galio"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "comp_label": "TFT17_DRX (Bronze) + TFT17_FioraUniqueTrait (Gold) + TFT17_MeleeTrait (Bronze) + TFT17_ShenUniqueTrait (Gold) + TFT17_ResistTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold)",
+      "play_count": 742,
+      "avg_placement": 4.77,
+      "top4_rate": 44.9,
+      "avg_top4_prob": 50.2,
+      "tier": "C",
+      "key_traits": [
+        "TFT17_DRX|1",
+        "TFT17_FioraUniqueTrait|3",
+        "TFT17_MeleeTrait|1",
+        "TFT17_ShenUniqueTrait|3",
+        "TFT17_ResistTank|1",
+        "TFT17_TahmKenchUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Aatrox",
+        "TFT17_Fiora",
+        "TFT17_Akali",
+        "TFT17_Shen",
+        "TFT17_TahmKench",
+        "TFT17_Zed",
+        "TFT17_Maokai",
+        "TFT17_Graves"
+      ]
+    },
+    {
+      "cluster_id": 44,
+      "comp_label": "TFT17_APTrait (Bronze) + TFT17_HPTank (Bronze) + TFT17_DarkStar (Prismatic) + TFT17_JhinUniqueTrait (Gold) + TFT17_Timebreaker (Bronze) + TFT17_FlexTrait (Bronze)",
+      "play_count": 633,
+      "avg_placement": 4.68,
+      "top4_rate": 44.2,
+      "avg_top4_prob": 42.7,
+      "tier": "C",
+      "key_traits": [
+        "TFT17_APTrait|1",
+        "TFT17_HPTank|1",
+        "TFT17_DarkStar|4",
+        "TFT17_JhinUniqueTrait|3",
+        "TFT17_Timebreaker|1",
+        "TFT17_FlexTrait|1"
+      ],
+      "key_units": [
+        "TFT17_Pantheon",
+        "TFT17_Chogath",
+        "TFT17_Lissandra",
+        "TFT17_Mordekaiser",
+        "TFT17_Karma",
+        "TFT17_Kaisa",
+        "TFT17_Jhin",
+        "TFT17_Ezreal"
+      ]
+    },
+    {
+      "cluster_id": 41,
+      "comp_label": "TFT17_ShieldTank (Silver) + TFT17_DarkStar (Bronze) + TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_FlexTrait (Bronze) + TFT17_ManaTrait (Bronze)",
+      "play_count": 794,
+      "avg_placement": 4.86,
+      "top4_rate": 43.8,
+      "avg_top4_prob": 43.2,
+      "tier": "C",
+      "key_traits": [
+        "TFT17_ShieldTank|2",
+        "TFT17_DarkStar|1",
+        "TFT17_SpaceGroove|1",
+        "TFT17_BlitzcrankUniqueTrait|3",
+        "TFT17_FlexTrait|1",
+        "TFT17_ManaTrait|1"
+      ],
+      "key_units": [
+        "TFT17_Illaoi",
+        "TFT17_Summon",
+        "TFT17_IvernMinion",
+        "TFT17_Mordekaiser",
+        "TFT17_Nunu",
+        "TFT17_Karma",
+        "TFT17_Blitzcrank",
+        "TFT17_Sona"
+      ]
+    },
+    {
+      "cluster_id": 38,
+      "comp_label": "TFT17_HPTank (Silver) + TFT17_RangedTrait (Bronze) + TFT17_Timebreaker (Prismatic) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_DRX (Bronze) + TFT17_Fateweaver (Bronze)",
+      "play_count": 974,
+      "avg_placement": 4.8,
+      "top4_rate": 43.7,
+      "avg_top4_prob": 42.6,
+      "tier": "C",
+      "key_traits": [
+        "TFT17_HPTank|2",
+        "TFT17_RangedTrait|1",
+        "TFT17_Timebreaker|4",
+        "TFT17_TahmKenchUniqueTrait|3",
+        "TFT17_DRX|1",
+        "TFT17_Fateweaver|1"
+      ],
+      "key_units": [
+        "TFT17_Pantheon",
+        "TFT17_Milio",
+        "TFT17_Ezreal",
+        "TFT17_Gnar",
+        "TFT17_Maokai",
+        "TFT17_TahmKench",
+        "TFT17_Caitlyn",
+        "TFT17_Riven"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "comp_label": "TFT17_FlexTrait (Silver) + TFT17_DarkStar (Bronze) + TFT17_HPTank (Bronze) + TFT17_MorganaUniqueTrait (Gold) + TFT17_PsyOps (Prismatic) + TFT17_ManaTrait (Bronze)",
+      "play_count": 362,
+      "avg_placement": 5.15,
+      "top4_rate": 42.3,
+      "avg_top4_prob": 41.1,
+      "tier": "C",
+      "key_traits": [
+        "TFT17_FlexTrait|2",
+        "TFT17_DarkStar|1",
+        "TFT17_HPTank|1",
+        "TFT17_MorganaUniqueTrait|3",
+        "TFT17_PsyOps|4",
+        "TFT17_ManaTrait|1"
+      ],
+      "key_units": [
+        "TFT17_Karma",
+        "TFT17_Galio",
+        "TFT17_IvernMinion",
+        "TFT17_Pyke",
+        "TFT17_Mordekaiser",
+        "TFT17_AurelionSol",
+        "TFT17_Aurora",
+        "TFT17_Morgana"
+      ]
+    },
+    {
+      "cluster_id": 23,
+      "comp_label": "TFT17_ResistTank (Bronze) + TFT17_HPTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_RangedTrait (Bronze) + TFT17_JhinUniqueTrait (Gold) + TFT17_DRX (Bronze)",
+      "play_count": 719,
+      "avg_placement": 4.97,
+      "top4_rate": 41.3,
+      "avg_top4_prob": 42.7,
+      "tier": "C",
+      "key_traits": [
+        "TFT17_ResistTank|1",
+        "TFT17_HPTank|1",
+        "TFT17_TahmKenchUniqueTrait|3",
+        "TFT17_RangedTrait|1",
+        "TFT17_JhinUniqueTrait|3",
+        "TFT17_DRX|1"
+      ],
+      "key_units": [
+        "TFT17_TahmKench",
+        "TFT17_Xayah",
+        "TFT17_Jhin",
+        "TFT17_Nunu",
+        "TFT17_Maokai",
+        "TFT17_Aatrox",
+        "TFT17_Jax",
+        "TFT17_Rhaast"
+      ]
+    },
+    {
+      "cluster_id": 43,
+      "comp_label": "TFT17_ShieldTank (Bronze) + TFT17_FlexTrait (Bronze) + TFT17_DarkStar (Bronze) + TFT17_MorganaUniqueTrait (Gold) + TFT17_SpaceGroove (Bronze) + TFT17_SonaUniqueTrait (Gold)",
+      "play_count": 704,
+      "avg_placement": 5.0,
+      "top4_rate": 38.6,
+      "avg_top4_prob": 42.7,
+      "tier": "C",
+      "key_traits": [
+        "TFT17_ShieldTank|1",
+        "TFT17_FlexTrait|1",
+        "TFT17_DarkStar|1",
+        "TFT17_MorganaUniqueTrait|3",
+        "TFT17_SpaceGroove|1",
+        "TFT17_SonaUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_IvernMinion",
+        "TFT17_Illaoi",
+        "TFT17_Summon",
+        "TFT17_Leblanc",
+        "TFT17_Lissandra",
+        "TFT17_Karma",
+        "TFT17_Morgana",
+        "TFT17_Sona"
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "comp_label": "Comp #6",
+      "play_count": 1625,
+      "avg_placement": 5.29,
+      "top4_rate": 38.1,
+      "avg_top4_prob": 28.9,
+      "tier": "C",
+      "key_traits": [],
+      "key_units": [
+        "TFT17_Pantheon",
+        "TFT17_Maokai",
+        "TFT17_Ornn",
+        "TFT17_Nasus",
+        "TFT17_Samira",
+        "TFT17_Gwen",
+        "TFT17_Nami",
+        "TFT17_Chogath"
+      ]
+    },
+    {
+      "cluster_id": 31,
+      "comp_label": "TFT17_ShieldTank (Bronze) + TFT17_AnimaSquad (Prismatic) + TFT17_FlexTrait (Bronze) + TFT17_FioraUniqueTrait (Gold) + TFT17_ASTrait (Bronze) + TFT17_SummonTrait (Bronze)",
+      "play_count": 572,
+      "avg_placement": 5.12,
+      "top4_rate": 38.1,
+      "avg_top4_prob": 40.6,
+      "tier": "C",
+      "key_traits": [
+        "TFT17_ShieldTank|1",
+        "TFT17_AnimaSquad|4",
+        "TFT17_FlexTrait|1",
+        "TFT17_FioraUniqueTrait|3",
+        "TFT17_ASTrait|1",
+        "TFT17_SummonTrait|1"
+      ],
+      "key_units": [
+        "TFT17_Illaoi",
+        "TFT17_Aurora",
+        "TFT17_Jinx",
+        "TFT17_Fiora",
+        "TFT17_IvernMinion",
+        "TFT17_Diana",
+        "TFT17_Summon",
+        "TFT17_Leona"
+      ]
+    },
+    {
+      "cluster_id": 40,
+      "comp_label": "TFT17_MissFortuneUniqueTrait (Gold) + TFT17_SpaceGroove (Bronze) + TFT17_DRX (Bronze) + TFT17_HPTank (Bronze) + TFT17_ResistTank (Bronze) + TFT17_RhaastUniqueTrait (Gold)",
+      "play_count": 961,
+      "avg_placement": 5.2,
+      "top4_rate": 34.8,
+      "avg_top4_prob": 37.6,
+      "tier": "D",
+      "key_traits": [
+        "TFT17_MissFortuneUniqueTrait|3",
+        "TFT17_SpaceGroove|1",
+        "TFT17_DRX|1",
+        "TFT17_HPTank|1",
+        "TFT17_ResistTank|1",
+        "TFT17_RhaastUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_MissFortune",
+        "TFT17_Maokai",
+        "TFT17_Aatrox",
+        "TFT17_Ornn",
+        "TFT17_Rhaast",
+        "TFT17_Viktor",
+        "TFT17_Gragas",
+        "TFT17_Urgot"
+      ]
+    },
+    {
+      "cluster_id": 13,
+      "comp_label": "TFT17_ResistTank (Bronze) + TFT17_Astronaut (Prismatic) + TFT17_Fateweaver (Bronze) + TFT17_APTrait (Bronze) + TFT17_AssassinTrait (Bronze)",
+      "play_count": 817,
+      "avg_placement": 5.33,
+      "top4_rate": 33.0,
+      "avg_top4_prob": 35.7,
+      "tier": "D",
+      "key_traits": [
+        "TFT17_ResistTank|1",
+        "TFT17_Astronaut|4",
+        "TFT17_Fateweaver|1",
+        "TFT17_APTrait|1",
+        "TFT17_AssassinTrait|1"
+      ],
+      "key_units": [
+        "TFT17_Rammus",
+        "TFT17_Poppy",
+        "TFT17_IvernMinion",
+        "TFT17_Corki",
+        "TFT17_Fizz",
+        "TFT17_Gnar",
+        "TFT17_Bard",
+        "TFT17_Milio"
+      ]
+    },
+    {
+      "cluster_id": 29,
+      "comp_label": "TFT17_APTrait (Bronze) + TFT17_Fateweaver (Bronze) + TFT17_HPTank (Bronze) + TFT17_ResistTank (Bronze) + TFT17_DRX (Bronze) + TFT17_Timebreaker (Bronze)",
+      "play_count": 1130,
+      "avg_placement": 5.42,
+      "top4_rate": 30.2,
+      "avg_top4_prob": 33.5,
+      "tier": "D",
+      "key_traits": [
+        "TFT17_APTrait|1",
+        "TFT17_Fateweaver|1",
+        "TFT17_HPTank|1",
+        "TFT17_ResistTank|1",
+        "TFT17_DRX|1",
+        "TFT17_Timebreaker|1"
+      ],
+      "key_units": [
+        "TFT17_Pantheon",
+        "TFT17_Milio",
+        "TFT17_Jax",
+        "TFT17_Lulu",
+        "TFT17_TwistedFate",
+        "TFT17_Aatrox",
+        "TFT17_Maokai",
+        "TFT17_Nunu"
+      ]
+    },
+    {
+      "cluster_id": 26,
+      "comp_label": "TFT17_ResistTank (Bronze) + TFT17_DRX (Bronze) + TFT17_Fateweaver (Bronze) + TFT17_AssassinTrait (Bronze) + TFT17_Timebreaker (Bronze) + TFT17_HPTank (Bronze)",
+      "play_count": 493,
+      "avg_placement": 5.61,
+      "top4_rate": 27.8,
+      "avg_top4_prob": 33.1,
+      "tier": "D",
       "key_traits": [
         "TFT17_ResistTank|1",
         "TFT17_DRX|1",
         "TFT17_Fateweaver|1",
         "TFT17_AssassinTrait|1",
-        "TFT17_SpaceGroove|1",
-        "TFT17_RhaastUniqueTrait|3"
+        "TFT17_Timebreaker|1",
+        "TFT17_HPTank|1"
+      ],
+      "key_units": [
+        "TFT17_Aatrox",
+        "TFT17_Milio",
+        "TFT17_Jax",
+        "TFT17_Caitlyn",
+        "TFT17_TwistedFate",
+        "TFT17_Talon",
+        "TFT17_Riven",
+        "TFT17_Maokai"
       ]
     },
     {
-      "cluster_id": 18,
-      "comp_label": "TFT17_ADMIN (Prismatic) + TFT17_ShieldTank (Silver) + TFT17_SummonTrait (Bronze) + TFT17_DarkStar (Bronze) + TFT17_FlexTrait (Bronze) + TFT17_ManaTrait (Bronze)",
-      "play_count": 449,
-      "avg_placement": 4.77,
-      "top4_rate": 45.9,
-      "avg_top4_prob": 43.8,
-      "tier": "B",
+      "cluster_id": 27,
+      "comp_label": "TFT17_APTrait (Bronze) + TFT17_Timebreaker (Bronze) + TFT17_AssassinTrait (Bronze) + TFT17_SpaceGroove (Silver) + TFT17_HPTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold)",
+      "play_count": 1243,
+      "avg_placement": 5.83,
+      "top4_rate": 22.8,
+      "avg_top4_prob": 25.7,
+      "tier": "D",
       "key_traits": [
-        "TFT17_ADMIN|4",
-        "TFT17_ShieldTank|2",
-        "TFT17_SummonTrait|1",
-        "TFT17_DarkStar|1",
-        "TFT17_FlexTrait|1",
-        "TFT17_ManaTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 43,
-      "comp_label": "TFT17_DRX (Bronze) + TFT17_ShenUniqueTrait (Gold) + TFT17_ResistTank (Bronze) + TFT17_FioraUniqueTrait (Gold) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_MeleeTrait (Bronze)",
-      "play_count": 459,
-      "avg_placement": 4.68,
-      "top4_rate": 45.3,
-      "avg_top4_prob": 48.7,
-      "tier": "B",
-      "key_traits": [
-        "TFT17_DRX|1",
-        "TFT17_ShenUniqueTrait|3",
-        "TFT17_ResistTank|1",
-        "TFT17_FioraUniqueTrait|3",
-        "TFT17_TahmKenchUniqueTrait|3",
-        "TFT17_MeleeTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 36,
-      "comp_label": "TFT17_ShieldTank (Bronze) + TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_FlexTrait (Bronze) + TFT17_DarkStar (Bronze) + TFT17_SonaUniqueTrait (Gold)",
-      "play_count": 287,
-      "avg_placement": 5.01,
-      "top4_rate": 43.6,
-      "avg_top4_prob": 44.9,
-      "tier": "C",
-      "key_traits": [
-        "TFT17_ShieldTank|1",
-        "TFT17_SpaceGroove|1",
-        "TFT17_BlitzcrankUniqueTrait|3",
-        "TFT17_FlexTrait|1",
-        "TFT17_DarkStar|1",
-        "TFT17_SonaUniqueTrait|3"
-      ]
-    },
-    {
-      "cluster_id": 34,
-      "comp_label": "Comp #34",
-      "play_count": 475,
-      "avg_placement": 5.02,
-      "top4_rate": 42.7,
-      "avg_top4_prob": 27.5,
-      "tier": "C",
-      "key_traits": []
-    },
-    {
-      "cluster_id": 23,
-      "comp_label": "TFT17_HPTank (Bronze) + TFT17_MeleeTrait (Bronze) + TFT17_Mecha (Prismatic) + TFT17_DRX (Bronze) + TFT17_ManaTrait (Bronze) + TFT17_FlexTrait (Bronze)",
-      "play_count": 290,
-      "avg_placement": 4.79,
-      "top4_rate": 41.7,
-      "avg_top4_prob": 38.9,
-      "tier": "C",
-      "key_traits": [
-        "TFT17_HPTank|1",
-        "TFT17_MeleeTrait|1",
-        "TFT17_Mecha|4",
-        "TFT17_DRX|1",
-        "TFT17_ManaTrait|1",
-        "TFT17_FlexTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 35,
-      "comp_label": "TFT17_ResistTank (Bronze) + TFT17_SpaceGroove (Silver) + TFT17_ShieldTank (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_RangedTrait (Bronze) + TFT17_RhaastUniqueTrait (Gold)",
-      "play_count": 340,
-      "avg_placement": 4.9,
-      "top4_rate": 41.5,
-      "avg_top4_prob": 42.5,
-      "tier": "C",
-      "key_traits": [
-        "TFT17_ResistTank|1",
+        "TFT17_APTrait|1",
+        "TFT17_Timebreaker|1",
+        "TFT17_AssassinTrait|1",
         "TFT17_SpaceGroove|2",
-        "TFT17_ShieldTank|1",
-        "TFT17_BlitzcrankUniqueTrait|3",
-        "TFT17_RangedTrait|1",
-        "TFT17_RhaastUniqueTrait|3"
-      ]
-    },
-    {
-      "cluster_id": 15,
-      "comp_label": "TFT17_RhaastUniqueTrait (Gold) + TFT17_AssassinTrait (Bronze) + TFT17_SpaceGroove (Bronze) + TFT17_Astronaut (Bronze) + TFT17_ResistTank (Bronze) + TFT17_DarkStar (Bronze)",
-      "play_count": 286,
-      "avg_placement": 5.02,
-      "top4_rate": 41.3,
-      "avg_top4_prob": 44.2,
-      "tier": "C",
-      "key_traits": [
-        "TFT17_RhaastUniqueTrait|3",
-        "TFT17_AssassinTrait|1",
-        "TFT17_SpaceGroove|1",
-        "TFT17_Astronaut|1",
-        "TFT17_ResistTank|1",
-        "TFT17_DarkStar|1"
-      ]
-    },
-    {
-      "cluster_id": 28,
-      "comp_label": "TFT17_FlexTrait (Bronze) + TFT17_DarkStar (Bronze) + TFT17_SummonTrait (Bronze) + TFT17_ShieldTank (Silver) + TFT17_ADMIN (Bronze) + TFT17_ManaTrait (Bronze)",
-      "play_count": 354,
-      "avg_placement": 4.99,
-      "top4_rate": 40.1,
-      "avg_top4_prob": 43.3,
-      "tier": "C",
-      "key_traits": [
-        "TFT17_FlexTrait|1",
-        "TFT17_DarkStar|1",
-        "TFT17_SummonTrait|1",
-        "TFT17_ShieldTank|2",
-        "TFT17_ADMIN|1",
-        "TFT17_ManaTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 42,
-      "comp_label": "TFT17_ManaTrait (Bronze) + TFT17_MissFortuneUniqueTrait (Gold) + TFT17_SpaceGroove (Bronze) + TFT17_DRX (Bronze) + TFT17_HPTank (Bronze) + TFT17_ResistTank (Bronze)",
-      "play_count": 330,
-      "avg_placement": 5.0,
-      "top4_rate": 39.4,
-      "avg_top4_prob": 42.4,
-      "tier": "C",
-      "key_traits": [
-        "TFT17_ManaTrait|1",
-        "TFT17_MissFortuneUniqueTrait|3",
-        "TFT17_SpaceGroove|1",
-        "TFT17_DRX|1",
         "TFT17_HPTank|1",
-        "TFT17_ResistTank|1"
+        "TFT17_TahmKenchUniqueTrait|3"
+      ],
+      "key_units": [
+        "TFT17_Pantheon",
+        "TFT17_Nami",
+        "TFT17_Riven",
+        "TFT17_Gwen",
+        "TFT17_Ornn",
+        "TFT17_TahmKench",
+        "TFT17_Nasus",
+        "TFT17_Blitzcrank"
       ]
     },
     {
-      "cluster_id": 26,
-      "comp_label": "TFT17_ShieldTank (Silver) + TFT17_SummonTrait (Bronze) + TFT17_DarkStar (Bronze) + TFT17_ADMIN (Bronze) + TFT17_ManaTrait (Bronze) + TFT17_SpaceGroove (Bronze)",
-      "play_count": 271,
-      "avg_placement": 5.01,
-      "top4_rate": 38.0,
-      "avg_top4_prob": 40.0,
-      "tier": "C",
+      "cluster_id": 14,
+      "comp_label": "TFT17_HPTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_ShieldTank (Bronze) + TFT17_APTrait (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_SpaceGroove (Silver)",
+      "play_count": 486,
+      "avg_placement": 6.22,
+      "top4_rate": 17.5,
+      "avg_top4_prob": 25.1,
+      "tier": "D",
       "key_traits": [
-        "TFT17_ShieldTank|2",
-        "TFT17_SummonTrait|1",
-        "TFT17_DarkStar|1",
-        "TFT17_ADMIN|1",
-        "TFT17_ManaTrait|1",
-        "TFT17_SpaceGroove|1"
-      ]
-    },
-    {
-      "cluster_id": 5,
-      "comp_label": "TFT17_ShieldTank (Bronze) + TFT17_AnimaSquad (Bronze) + TFT17_ASTrait (Bronze) + TFT17_SummonTrait (Bronze) + TFT17_ADMIN (Prismatic) + TFT17_FlexTrait (Bronze)",
-      "play_count": 438,
-      "avg_placement": 5.2,
-      "top4_rate": 37.9,
-      "avg_top4_prob": 37.0,
-      "tier": "C",
-      "key_traits": [
+        "TFT17_HPTank|1",
+        "TFT17_TahmKenchUniqueTrait|3",
         "TFT17_ShieldTank|1",
-        "TFT17_AnimaSquad|1",
-        "TFT17_ASTrait|1",
-        "TFT17_SummonTrait|1",
-        "TFT17_ADMIN|4",
-        "TFT17_FlexTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 21,
-      "comp_label": "TFT17_FlexTrait (Bronze) + TFT17_ResistTank (Bronze) + TFT17_Astronaut (Prismatic) + TFT17_APTrait (Bronze) + TFT17_SpaceGroove (Bronze) + TFT17_Astronaut (Silver)",
-      "play_count": 124,
-      "avg_placement": 4.73,
-      "top4_rate": 37.9,
-      "avg_top4_prob": 41.4,
-      "tier": "C",
-      "key_traits": [
-        "TFT17_FlexTrait|1",
-        "TFT17_ResistTank|1",
-        "TFT17_Astronaut|4",
         "TFT17_APTrait|1",
-        "TFT17_SpaceGroove|1",
-        "TFT17_Astronaut|2"
-      ]
-    },
-    {
-      "cluster_id": 32,
-      "comp_label": "TFT17_HPTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_Mecha (Prismatic) + TFT17_ManaTrait (Bronze) + TFT17_FlexTrait (Bronze) + TFT17_MorganaUniqueTrait (Gold)",
-      "play_count": 581,
-      "avg_placement": 5.16,
-      "top4_rate": 36.7,
-      "avg_top4_prob": 41.0,
-      "tier": "C",
-      "key_traits": [
-        "TFT17_HPTank|1",
-        "TFT17_TahmKenchUniqueTrait|3",
-        "TFT17_Mecha|4",
-        "TFT17_ManaTrait|1",
-        "TFT17_FlexTrait|1",
-        "TFT17_MorganaUniqueTrait|3"
-      ]
-    },
-    {
-      "cluster_id": 11,
-      "comp_label": "TFT17_SpaceGroove (Bronze) + TFT17_BlitzcrankUniqueTrait (Gold) + TFT17_ShenUniqueTrait (Gold) + TFT17_ShieldTank (Bronze) + TFT17_MorganaUniqueTrait (Gold) + TFT17_ResistTank (Bronze)",
-      "play_count": 331,
-      "avg_placement": 5.4,
-      "top4_rate": 34.1,
-      "avg_top4_prob": 39.3,
-      "tier": "D",
-      "key_traits": [
-        "TFT17_SpaceGroove|1",
         "TFT17_BlitzcrankUniqueTrait|3",
-        "TFT17_ShenUniqueTrait|3",
-        "TFT17_ShieldTank|1",
-        "TFT17_MorganaUniqueTrait|3",
-        "TFT17_ResistTank|1"
-      ]
-    },
-    {
-      "cluster_id": 10,
-      "comp_label": "TFT17_MeleeTrait (Silver) + TFT17_FioraUniqueTrait (Gold) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_HPTank (Bronze) + TFT17_DRX (Prismatic) + TFT17_ASTrait (Bronze)",
-      "play_count": 283,
-      "avg_placement": 5.34,
-      "top4_rate": 32.9,
-      "avg_top4_prob": 35.1,
-      "tier": "D",
-      "key_traits": [
-        "TFT17_MeleeTrait|2",
-        "TFT17_FioraUniqueTrait|3",
-        "TFT17_TahmKenchUniqueTrait|3",
-        "TFT17_HPTank|1",
-        "TFT17_DRX|4",
-        "TFT17_ASTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 46,
-      "comp_label": "TFT17_HPTank (Silver) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_Timebreaker (Prismatic) + TFT17_RangedTrait (Bronze) + TFT17_MeleeTrait (Bronze)",
-      "play_count": 244,
-      "avg_placement": 5.54,
-      "top4_rate": 31.6,
-      "avg_top4_prob": 32.7,
-      "tier": "D",
-      "key_traits": [
-        "TFT17_HPTank|2",
-        "TFT17_TahmKenchUniqueTrait|3",
-        "TFT17_Timebreaker|4",
-        "TFT17_RangedTrait|1",
-        "TFT17_MeleeTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 40,
-      "comp_label": "TFT17_ResistTank (Bronze) + TFT17_Astronaut (Bronze) + TFT17_DarkStar (Bronze) + TFT17_ShenUniqueTrait (Gold) + TFT17_FlexTrait (Silver) + TFT17_SonaUniqueTrait (Gold)",
-      "play_count": 166,
-      "avg_placement": 5.4,
-      "top4_rate": 31.3,
-      "avg_top4_prob": 35.9,
-      "tier": "D",
-      "key_traits": [
-        "TFT17_ResistTank|1",
-        "TFT17_Astronaut|1",
-        "TFT17_DarkStar|1",
-        "TFT17_ShenUniqueTrait|3",
-        "TFT17_FlexTrait|2",
-        "TFT17_SonaUniqueTrait|3"
-      ]
-    },
-    {
-      "cluster_id": 16,
-      "comp_label": "TFT17_HPTank (Bronze) + TFT17_TahmKenchUniqueTrait (Gold) + TFT17_AssassinTrait (Bronze) + TFT17_SpaceGroove (Bronze) + TFT17_PsyOps (Bronze) + TFT17_FlexTrait (Bronze)",
-      "play_count": 254,
-      "avg_placement": 5.48,
-      "top4_rate": 30.7,
-      "avg_top4_prob": 36.2,
-      "tier": "D",
-      "key_traits": [
-        "TFT17_HPTank|1",
-        "TFT17_TahmKenchUniqueTrait|3",
-        "TFT17_AssassinTrait|1",
-        "TFT17_SpaceGroove|1",
-        "TFT17_PsyOps|1",
-        "TFT17_FlexTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 47,
-      "comp_label": "TFT17_ResistTank (Bronze) + TFT17_Astronaut (Prismatic) + TFT17_APTrait (Bronze) + TFT17_AssassinTrait (Bronze)",
-      "play_count": 346,
-      "avg_placement": 5.34,
-      "top4_rate": 30.3,
-      "avg_top4_prob": 37.2,
-      "tier": "D",
-      "key_traits": [
-        "TFT17_ResistTank|1",
-        "TFT17_Astronaut|4",
-        "TFT17_APTrait|1",
-        "TFT17_AssassinTrait|1"
-      ]
-    },
-    {
-      "cluster_id": 7,
-      "comp_label": "TFT17_DRX (Bronze) + TFT17_MeleeTrait (Bronze) + TFT17_HPTank (Bronze) + TFT17_Primordian (Prismatic) + TFT17_ASTrait (Bronze)",
-      "play_count": 174,
-      "avg_placement": 5.64,
-      "top4_rate": 28.7,
-      "avg_top4_prob": 35.6,
-      "tier": "D",
-      "key_traits": [
-        "TFT17_DRX|1",
-        "TFT17_MeleeTrait|1",
-        "TFT17_HPTank|1",
-        "TFT17_Primordian|4",
-        "TFT17_ASTrait|1"
+        "TFT17_SpaceGroove|2"
+      ],
+      "key_units": [
+        "TFT17_TahmKench",
+        "TFT17_Pantheon",
+        "TFT17_Nami",
+        "TFT17_Blitzcrank",
+        "TFT17_Ornn",
+        "TFT17_Nasus",
+        "TFT17_Gwen",
+        "TFT17_Nunu"
       ]
     }
   ]

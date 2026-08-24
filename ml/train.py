@@ -11,6 +11,7 @@ import os
 import json
 import joblib
 import logging
+from collections import Counter
 import numpy as np
 import pandas as pd
 from dotenv import load_dotenv
@@ -279,6 +280,13 @@ def build_comp_tier_list(df: pd.DataFrame, X: np.ndarray, model: XGBClassifier, 
 
         comp_label = " + ".join(comp_label_parts) if comp_label_parts else f"Comp #{cluster_id}"
 
+        # หา champion ที่ใช้บ่อยที่สุดใน cluster นี้ (ไม่สนดาว เอาแค่ตัวละคร) — ไม่ได้มาจาก centroid
+        # เพราะ clustering ใช้แค่ trait features เลยต้องนับความถี่จาก raw units ของแต่ละแถวในคลัสเตอร์แทน
+        champion_counter = Counter()
+        for units in cluster_df["units"]:
+            champion_counter.update({u.rsplit("|", 1)[0] for u in units})
+        key_units = [champ for champ, _ in champion_counter.most_common(8)]
+
         comp_tier_list.append({
             "cluster_id":    cluster_id,
             "comp_label":    comp_label,
@@ -288,6 +296,7 @@ def build_comp_tier_list(df: pd.DataFrame, X: np.ndarray, model: XGBClassifier, 
             "avg_top4_prob": round(float(avg_prob), 1),
             "tier":          classify_tier(top4_rate),
             "key_traits":    trait_names,
+            "key_units":     key_units,
         })
 
     # เรียงตาม top4_rate
